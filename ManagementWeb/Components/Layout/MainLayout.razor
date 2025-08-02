@@ -1,0 +1,43 @@
+﻿@inherits LayoutComponentBase
+
+<style>
+    .message-bar-overlay {
+        position: fixed;
+        top: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        z-index: 10000;
+        pointer-events: auto;
+    }
+
+    .message-bar-overlay fluent-message-bar {
+        pointer-events: auto;
+    }
+</style>
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        @* <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div> *@
+
+        <article class="content px-4">
+            <div class="message-bar-overlay">
+                <FluentMessageBarProvider MaxMessageCount="3" NewestOnTop="true" @rendermode="InteractiveServer" />
+            </div>
+            @Body
+        </article>
+        <FluentDialogProvider @rendermode="InteractiveServer"/>
+    </main>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>

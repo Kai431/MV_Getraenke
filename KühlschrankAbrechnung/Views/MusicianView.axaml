@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="KühlschrankAbrechnung.MusicianView"
+        xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+        xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+        x:DataType="vm:MusicianViewModel"
+        Background="White">
+
+  <Grid RowDefinitions="Auto,*" >
+    <!-- HEADER -->
+    <Border Background="#2196F3" Height="60" BorderBrush="#1976D2" BorderThickness="0,0,0,2">
+      <DockPanel VerticalAlignment="Center">
+        <Button Content="{Binding ChosenMusician.Name}"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   DockPanel.Dock="Left"
+                   VerticalAlignment="Stretch"
+                   VerticalContentAlignment="Center"
+                   Background="Transparent"
+                   Command="{Binding SwitchUserControleCommand}"/>
+
+        <Button Content="Home"
+                FontSize="22"
+                FontWeight="Bold"
+                Foreground="White"
+                Padding="10,4"
+                BorderBrush="White"
+                BorderThickness="1.5"
+                Margin="20,10"
+                CornerRadius="8"
+                Background="Transparent"
+                HorizontalAlignment="Right"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Command="{Binding GoToHomeViewCommand}"
+                DockPanel.Dock="Right"/>
+      </DockPanel>
+    </Border>
+
+    <ContentControl Grid.Row="1" Content="{Binding CurrentMusicianContent}" />
+    </Grid>
+</UserControl>

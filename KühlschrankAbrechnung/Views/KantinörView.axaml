@@ -1,0 +1,86 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KühlschrankAbrechnung.KantinörView"
+             xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+             xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+             x:DataType="vm:KantinörViewModel"
+             Background="White">
+  <StackPanel>
+
+
+    <!-- HEADER -->
+    <Border Background="#2196F3" Padding="20,0" Height="60" BorderBrush="#1976D2" BorderThickness="0,0,0,2">
+      <DockPanel VerticalAlignment="Center">
+        <TextBlock Text="Kantinör"
+                   VerticalAlignment="Center"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   DockPanel.Dock="Left"/>
+
+        <Button Content="Home"
+                FontSize="22"
+                FontWeight="Bold"
+                Foreground="White"
+                Padding="10,4"
+                BorderBrush="White"
+                BorderThickness="1.5"
+                CornerRadius="8"
+                VerticalContentAlignment="Center"
+                Background="Transparent"
+                HorizontalAlignment="Right"
+                HorizontalContentAlignment="Center"
+                Command="{Binding GoToHomeViewCommand}"
+                DockPanel.Dock="Right"/>
+      </DockPanel>
+    </Border>
+    <Button Height="80"
+                    BorderBrush="#2196F3"
+                    BorderThickness="2"
+                    Background="White"
+                    Foreground="Black"
+                    CornerRadius="10"
+                    Padding="12"
+                    Margin="5"
+                    HorizontalAlignment="Stretch"
+                    FontSize="20"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontWeight="SemiBold"
+                    Content="Abrechnen"
+                    Command="{Binding GoToAbrechnungsViewCommand}"/>
+    <Button Height="80"
+                    BorderBrush="#2196F3"
+                    BorderThickness="2"
+                    Background="White"
+                    Foreground="Black"
+                    CornerRadius="10"
+                    Padding="12"
+                    Margin="5"
+                    HorizontalAlignment="Stretch"
+                    FontSize="20"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontWeight="SemiBold"
+                    Content="Kassastand"
+                    Command="{Binding GoToKassaViewCommand}"/>
+    <Button Height="80"
+                    BorderBrush="#2196F3"
+                    BorderThickness="2"
+                    Background="White"
+                    Foreground="Black"
+                    CornerRadius="10"
+                    Padding="12"
+                    Margin="5"
+                    HorizontalAlignment="Stretch"
+                    FontSize="20"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontWeight="SemiBold"
+                    Content="Statistik"
+                    Command="{Binding GoToStatistikViewCommand}"/>
+  </StackPanel>
+</UserControl>

@@ -1,0 +1,72 @@
+2025-07-16 09:13:50.839 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-16 09:13:51.159 +02:00 [INF] User profile is available. Using 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-16 09:13:51.205 +02:00 [DBG] Hosting starting
+2025-07-16 09:13:51.216 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-3bfa30d7-5e03-434e-8453-cef78345e700.xml'.
+2025-07-16 09:13:51.218 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-a61c95be-0c2a-4f87-999c-bb2ae8ee9a91.xml'.
+2025-07-16 09:13:51.224 +02:00 [DBG] Found key {3bfa30d7-5e03-434e-8453-cef78345e700}.
+2025-07-16 09:13:51.228 +02:00 [DBG] Found key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91}.
+2025-07-16 09:13:51.233 +02:00 [DBG] Considering key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} with expiration date 2025-10-05 13:15:10Z as default key.
+2025-07-16 09:13:51.236 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-16 09:13:51.238 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-07-16 09:13:51.239 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-16 09:13:51.242 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-07-16 09:13:51.243 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-07-16 09:13:51.244 +02:00 [DBG] Using key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} as the default key.
+2025-07-16 09:13:51.244 +02:00 [DBG] Key ring with default key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} was loaded during application startup.
+2025-07-16 09:13:51.267 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-07-16 09:13:51.267 +02:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-07-16 09:13:51.476 +02:00 [INF] Now listening on: http://0.0.0.0:5000
+2025-07-16 09:13:51.476 +02:00 [DBG] Loaded hosting startup assembly ManagementWeb
+2025-07-16 09:13:51.478 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-16 09:13:51.478 +02:00 [INF] Hosting environment: Production
+2025-07-16 09:13:51.478 +02:00 [INF] Content root path: D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Debug\net8.0\
+2025-07-16 09:13:51.478 +02:00 [DBG] Hosting started
+2025-07-16 09:13:51.478 +02:00 [INF] Webserver gestartet
+2025-07-16 20:55:50.906 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-16 20:55:51.095 +02:00 [INF] User profile is available. Using 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-16 20:55:51.137 +02:00 [DBG] Hosting starting
+2025-07-16 20:55:51.148 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-3bfa30d7-5e03-434e-8453-cef78345e700.xml'.
+2025-07-16 20:55:51.151 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-a61c95be-0c2a-4f87-999c-bb2ae8ee9a91.xml'.
+2025-07-16 20:55:51.155 +02:00 [DBG] Found key {3bfa30d7-5e03-434e-8453-cef78345e700}.
+2025-07-16 20:55:51.160 +02:00 [DBG] Found key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91}.
+2025-07-16 20:55:51.164 +02:00 [DBG] Considering key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} with expiration date 2025-10-05 13:15:10Z as default key.
+2025-07-16 20:55:51.166 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-16 20:55:51.167 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-07-16 20:55:51.169 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-16 20:55:51.173 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-07-16 20:55:51.174 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-07-16 20:55:51.175 +02:00 [DBG] Using key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} as the default key.
+2025-07-16 20:55:51.175 +02:00 [DBG] Key ring with default key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} was loaded during application startup.
+2025-07-16 20:55:51.194 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-07-16 20:55:51.194 +02:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-07-16 20:55:51.357 +02:00 [INF] Now listening on: http://0.0.0.0:5000
+2025-07-16 20:55:51.357 +02:00 [DBG] Loaded hosting startup assembly ManagementWeb
+2025-07-16 20:55:51.358 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-16 20:55:51.358 +02:00 [INF] Hosting environment: Production
+2025-07-16 20:55:51.358 +02:00 [INF] Content root path: D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Debug\net8.0\
+2025-07-16 20:55:51.358 +02:00 [DBG] Hosting started
+2025-07-16 20:55:51.358 +02:00 [INF] Webserver gestartet
+2025-07-16 20:56:12.636 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-16 20:56:12.678 +02:00 [INF] User profile is available. Using 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-16 20:56:12.689 +02:00 [DBG] Hosting starting
+2025-07-16 20:56:12.696 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-3bfa30d7-5e03-434e-8453-cef78345e700.xml'.
+2025-07-16 20:56:12.697 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-a61c95be-0c2a-4f87-999c-bb2ae8ee9a91.xml'.
+2025-07-16 20:56:12.699 +02:00 [DBG] Found key {3bfa30d7-5e03-434e-8453-cef78345e700}.
+2025-07-16 20:56:12.701 +02:00 [DBG] Found key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91}.
+2025-07-16 20:56:12.703 +02:00 [DBG] Considering key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} with expiration date 2025-10-05 13:15:10Z as default key.
+2025-07-16 20:56:12.705 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-16 20:56:12.706 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-07-16 20:56:12.707 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-16 20:56:12.709 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-07-16 20:56:12.709 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-07-16 20:56:12.710 +02:00 [DBG] Using key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} as the default key.
+2025-07-16 20:56:12.710 +02:00 [DBG] Key ring with default key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} was loaded during application startup.
+2025-07-16 20:56:12.720 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-07-16 20:56:12.720 +02:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-07-16 20:56:12.767 +02:00 [INF] Now listening on: http://0.0.0.0:5000
+2025-07-16 20:56:12.768 +02:00 [DBG] Loaded hosting startup assembly ManagementWeb
+2025-07-16 20:56:12.769 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-16 20:56:12.769 +02:00 [INF] Hosting environment: Production
+2025-07-16 20:56:12.769 +02:00 [INF] Content root path: D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Debug\net8.0\
+2025-07-16 20:56:12.769 +02:00 [DBG] Hosting started
+2025-07-16 20:56:12.769 +02:00 [INF] Webserver gestartet

@@ -1,0 +1,60 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KühlschrankAbrechnung.KassaView"
+             xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+             xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+             x:DataType="vm:KassaViewModel"
+             Background="White">
+  <StackPanel VerticalAlignment="Top">
+
+    <!-- HEADER -->
+    <Border Background="#2196F3" Padding="20,0" Height="60" BorderBrush="#1976D2" BorderThickness="0,0,0,2">
+      <DockPanel VerticalAlignment="Center">
+        <TextBlock Text="Kassenübersicht"
+                   VerticalAlignment="Center"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   DockPanel.Dock="Left"/>
+
+        <Button Content="Zurück"
+                FontSize="22"
+                FontWeight="Bold"
+                Foreground="White"
+                Padding="10,4"
+                BorderBrush="White"
+                BorderThickness="1.5"
+                CornerRadius="8"
+                VerticalContentAlignment="Center"
+                Background="Transparent"
+                HorizontalAlignment="Right"
+                HorizontalContentAlignment="Center"
+                Command="{Binding GoBackCommand}"
+                DockPanel.Dock="Right"/>
+      </DockPanel>
+    </Border>
+    
+  <StackPanel Margin="30" Spacing="20" HorizontalAlignment="Center">
+   
+
+    <!-- Aktueller Stand -->
+    <Border Background="#E8F5E9" BorderBrush="#4CAF50" BorderThickness="2" CornerRadius="10" Padding="20" Width="300">
+      <StackPanel>
+        <TextBlock Text="Aktueller Kassenstand" FontSize="16" FontWeight="Bold" Foreground="#2E7D32" />
+        <TextBlock Text="{Binding BalanceFormatted}" FontSize="22" FontWeight="Bold" Foreground="#2E7D32" />
+      </StackPanel>
+    </Border>
+
+    <!-- Projektion -->
+    <Border Background="#FFFDE7" BorderBrush="#FFB300" BorderThickness="2" CornerRadius="10" Padding="20" Width="300">
+      <StackPanel>
+        <TextBlock Text="Prognostizierter Stand" FontSize="16" FontWeight="Bold" Foreground="#F57F17" />
+        <TextBlock Text="{Binding ProjectedFormatted}" FontSize="22" FontWeight="Bold" Foreground="#F57F17" />
+      </StackPanel>
+    </Border>
+  </StackPanel>
+ </StackPanel>
+</UserControl>

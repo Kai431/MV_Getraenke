@@ -1,0 +1,37 @@
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\appsettings.Development.json
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\appsettings.json
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\libman.json
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\KühlschrankAbrechnung.pdb
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Fonts\dehintedFont.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Assets\Icons\Drinks\Limo.png
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\ManagementWeb.runtimeconfig.json
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Data\musicians.json
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Black.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-BlackItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Bold.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-BoldItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-ExtraBold.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-ExtraBoldItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-ExtraLight.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-ExtraLightItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Italic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Light.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-LightItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Medium.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-MediumItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Regular.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-SemiBold.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-SemiBoldItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-Thin.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\Lato-ThinItalic.ttf
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\LatoFont\OFL.txt
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Assets\Icons\Drinks\Bembel.png
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Assets\Icons\Drinks\Bier Gr..png
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Assets\Icons\Drinks\Bier Kl..png
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Assets\Icons\Drinks\Spritzer.png
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\libHarfBuzzSharp.so
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\libSkiaSharp.so
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\libe_sqlite3.so
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\ManagementWeb.pdb
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\Shared.pdb
+D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Release\net8.0\publish\linux-arm\KühlschrankAbrechnung

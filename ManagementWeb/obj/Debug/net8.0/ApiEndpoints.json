@@ -1,0 +1,52 @@
+[
+  {
+    "ContainingType": "ManagementWeb.Controller.DownloadController",
+    "Method": "DownloadDatabaseGetr\u00E4nke",
+    "RelativePath": "api/downloads/database/Getr\u00E4nke",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagementWeb.Controller.DownloadController",
+    "Method": "DownloadDatabaseKassa",
+    "RelativePath": "api/downloads/database/Kassa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagementWeb.Controller.DownloadController",
+    "Method": "DownloadDatabaseK\u00FChlschrank",
+    "RelativePath": "api/downloads/database/K\u00FChlschranknutzung",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagementWeb.Controller.DownloadController",
+    "Method": "DownloadEmptyList",
+    "RelativePath": "api/downloads/emptylist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManagementWeb.Controller.DownloadController",
+    "Method": "DownloadBill",
+    "RelativePath": "api/downloads/rechnung",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

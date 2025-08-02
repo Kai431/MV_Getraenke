@@ -1,0 +1,58 @@
+﻿@page "/downloads"
+@inject DownloadsViewModel VM;
+<FluentStack Orientation="Orientation.Horizontal">
+<iconify-icon icon="mdi:download" width="30" style="margin-top:4px"></iconify-icon>
+<h2 style="margin-bottom: 20px;">
+    Downloads
+</h2>
+</FluentStack>
+<FluentStack Orientation="Orientation.Horizontal">
+<FluentCard style="width:fit-content">
+    <FluentLabel Style="font-weight:500; color: #2f6cc3; font-size:20px; margin-bottom:10px">Dokumente</FluentLabel>
+    <FluentStack Orientation="Orientation.Vertical">
+    <a href="/api/downloads/rechnung" target="_blank">
+        <FluentButton Appearance="Appearance.Stealth">
+            <FluentIcon Value="@(new Icons.Regular.Size24.ArrowDownload())" />
+            Abrechnung_@(DateTime.Now.ToString("dd.MM.yyyy")).pdf
+        </FluentButton>
+    </a>
+        <a href="/api/downloads/emptylist" target="_blank">
+            <FluentButton Appearance="Appearance.Stealth">
+                <FluentIcon Value="@(new Icons.Regular.Size24.ArrowDownload())" />
+                Leere_Musikantenliste.pdf
+            </FluentButton>
+        </a>
+    </FluentStack>
+</FluentCard>
+
+    <FluentCard style="width:fit-content">
+    <FluentLabel Style="font-weight:500; color: #2f6cc3; font-size:20px; margin-bottom:10px">Database</FluentLabel>
+    <FluentStack Orientation="Orientation.Vertical">
+        <a href="/api/downloads/database/Kühlschranknutzung" download>
+            <FluentButton Appearance="Appearance.Stealth">
+                <FluentIcon Value="@(new Icons.Regular.Size24.Database())" />
+                Kühlschranknutzung.db
+            </FluentButton>
+        </a>
+        <a href="/api/downloads/database/Getränke" download>
+            <FluentButton Appearance="Appearance.Stealth">
+                <FluentIcon Value="@(new Icons.Regular.Size24.Database())" />
+                Drinks.db
+            </FluentButton>
+        </a>
+            <a href="/api/downloads/database/Kassa" download>
+                <FluentButton Appearance="Appearance.Stealth">
+                    <FluentIcon Value="@(new Icons.Regular.Size24.Database())" />
+                    Kassa.db
+                </FluentButton>
+            </a>
+    </FluentStack>
+    </FluentCard>
+</FluentStack>
+
+@code {
+    protected override void OnInitialized()
+    {
+        VM.Initialize();
+    }
+}

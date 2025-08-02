@@ -1,0 +1,431 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CodeWin\\KühlschrankAbrechnung\\KühlschrankAbrechnung\\KühlschrankAbrechnung.csproj": {}
+  },
+  "projects": {
+    "D:\\CodeWin\\KühlschrankAbrechnung\\KühlschrankAbrechnung\\KühlschrankAbrechnung.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeWin\\KühlschrankAbrechnung\\KühlschrankAbrechnung\\KühlschrankAbrechnung.csproj",
+        "projectName": "KühlschrankAbrechnung",
+        "projectPath": "D:\\CodeWin\\KühlschrankAbrechnung\\KühlschrankAbrechnung\\KühlschrankAbrechnung.csproj",
+        "packagesPath": "C:\\Users\\KaiTinkhauser\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeWin\\KühlschrankAbrechnung\\KühlschrankAbrechnung\\obj\\publish\\linux-arm64\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KaiTinkhauser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\CodeWin\\KühlschrankAbrechnung\\ManagementWeb\\ManagementWeb.csproj": {
+                "projectPath": "D:\\CodeWin\\KühlschrankAbrechnung\\ManagementWeb\\ManagementWeb.csproj"
+              },
+              "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Avalonia.Controls.DataGrid": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Avalonia.Diagnostics": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "LiveChartsCore.SkiaSharpView.Avalonia": {
+              "target": "Package",
+              "version": "[2.0.0-rc5.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )",
+              "autoReferenced": true
+            },
+            "ReactiveUI": {
+              "target": "Package",
+              "version": "[20.2.45, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "SkiaSharp.NativeAssets.Linux.NoDependencies": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-arm64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\CodeWin\\KühlschrankAbrechnung\\ManagementWeb\\ManagementWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeWin\\KühlschrankAbrechnung\\ManagementWeb\\ManagementWeb.csproj",
+        "projectName": "ManagementWeb",
+        "projectPath": "D:\\CodeWin\\KühlschrankAbrechnung\\ManagementWeb\\ManagementWeb.csproj",
+        "packagesPath": "C:\\Users\\KaiTinkhauser\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeWin\\KühlschrankAbrechnung\\ManagementWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KaiTinkhauser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Blazor-ApexCharts": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.FluentUI.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[4.11.8, )"
+            },
+            "Microsoft.FluentUI.AspNetCore.Components.Icons": {
+              "target": "Package",
+              "version": "[4.11.8, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )",
+              "autoReferenced": true
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.5.0, )"
+            },
+            "ReactiveUI": {
+              "target": "Package",
+              "version": "[20.2.45, )"
+            },
+            "ReactiveUI.Blazor": {
+              "target": "Package",
+              "version": "[20.2.45, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-arm64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\KaiTinkhauser\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeWin\\KühlschrankAbrechnung\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KaiTinkhauser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.2.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )",
+              "autoReferenced": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.linux-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-arm64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

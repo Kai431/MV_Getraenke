@@ -1,0 +1,78 @@
+﻿@page "/musikanten"
+@inject MusicianManagerViewModel VM;
+@rendermode InteractiveServer
+<style>
+    .popup {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        height: 60px;
+        margin-top: 17px; /* To compensate for parent block's padding */
+        color: #fff;
+        background: #f00;
+        z-index: 9999999;
+        overflow: visible !important;
+    }
+
+    .item:hover .popup {
+        display: block;
+    }
+
+    fluent-card {
+        contain: none;
+        content-visibility: visible;
+    }
+
+    .blocking-div {
+        pointer-events: none;
+    }
+</style>
+
+<h2>🎶 Musikanten</h2>
+@if (VM.ShowMusicianDrinkHistory)
+{
+    <MusicianDrinkHistoryView OnClose="@(() => VM.ShowMusicianDrinkHistory = false)" Musician="VM.SelectedMusician" />
+}
+else
+{
+    <FluentStack HorizontalGap="40" Width="1000px">
+        <FluentStack HorizontalGap="5" Width="520px">
+            <div style="height: 700px; overflow-y: scroll; margin-top:20px; width:500px">
+                <FluentDataGrid Items="VM.Musicians.AsQueryable()" OnRowDoubleClick="@(row => VM.OnRowDoubleClick(row.Item))" ShowHover="true" TGridItem="Musician" GridTemplateColumns="1fr 0.5fr 0.5fr" OnRowClick="@((row) => VM.MusicianChanged(row.Item))">
+                    <PropertyColumn Property="@(m => m.Name)" Sortable="true" />
+                    <PropertyColumn Property="@(m => m.Balance)" Format="C" Sortable="true" />
+                    <PropertyColumn Property="@(m => m.outBalance)" Format="C" Sortable="true" />
+                </FluentDataGrid>
+            </div>
+            <FluentButton IconStart="@(new Icons.Regular.Size24.Add())" OnClick="@VM.NewMusician" />
+        </FluentStack>
+
+        <FluentStack Orientation="Orientation.Vertical" Width="400px">
+            <FluentCard style="flex:1; padding:16px; color:#888;">
+                <FluentTextField Disabled="@VM.EditFieldsDisabled" @bind-Value="@VM.txtName" Style="width:100%" Label="Name:"></FluentTextField>
+                <FluentSelect Placeholder="Instrument" TOption="string" Disabled="@VM.EditFieldsDisabled" Style="width:100%" Label="Instrument:" @bind-Value="@VM.sltInstrument">
+                    @foreach (var satz in Enum.GetValues<Satz>())
+                    {
+                        <FluentOption Value="@satz.ToString()">@satz.ToString()</FluentOption>
+                    }
+                </FluentSelect>
+                <FluentStack Style="width: stretch;align-items:stretch; justify-content:center; margin-top: 10px;" HorizontalGap="10">
+                    <FluentButton Style="width: 120px" Disabled="@VM.SaveBtnDisabled" OnClick="VM.SaveMusician">Speichern</FluentButton>
+                    <FluentButton Style="width: 120px" Disabled="@VM.SaveBtnDisabled" OnClick="VM.CancelEdit">Abbrechen</FluentButton>
+                    <FluentButton Style="width: 120px" Disabled="@VM.EditBtnsDisabled" OnClick="VM.EditMusician">Editieren</FluentButton>
+                    <FluentButton BackgroundColor="#D13438" Style="color:white; width:120px;" OnClick="VM.DeleteMusician" Disabled="@VM.EditBtnsDisabled">Löschen</FluentButton>
+                </FluentStack>
+            </FluentCard>
+            <FluentLabel Style="font-size:15px">Mit Doppelclick auf einen Musikanten kannst du seine Getränke-Einträge ansehen :)</FluentLabel>
+        </FluentStack>
+    </FluentStack>
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        VM.Initialize();
+    }
+}

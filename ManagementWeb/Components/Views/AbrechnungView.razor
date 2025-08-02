@@ -1,0 +1,65 @@
+﻿@page "/abrechnung"
+@inject AbrechnungViewModel VM
+@rendermode InteractiveServer
+
+<style>
+    .Listbox-content{
+        font-size:20px;
+        font-weight:bold;
+    }
+</style>
+
+<h2 style="margin-bottom: 20px;">
+    <iconify-icon icon="mdi:cash-multiple" width="22" style="margin-right:7px;"></iconify-icon>
+    Abrechnen
+</h2>
+
+<FluentStack Style="align-items:flex-start;">
+    <!-- Musikerliste -->
+        <FluentListbox TOption="Musician"
+                       Items="@VM.Musicians"
+                       Width="300px"
+                       Height="700px"
+                       OptionText="@(p => p.Name)"
+                       Multiple="false"
+                       SelectedOptionChanged="@VM.MusicianChanged"/>
+
+    <!-- Detailansicht -->
+    <FluentCard Style="padding:24px; width:350px; background:#f9f9f9; margin-left:10px">
+        @if (VM.SelectedMusician is not null)
+        {
+            <FluentStack Orientation="Orientation.Vertical" VerticalGap="12">
+
+                <FluentLabel Style="font-weight:bold; font-size:18px;">
+                    @VM.SelectedMusician.Name
+                </FluentLabel>
+
+                <FluentLabel>
+                    Offener Betrag: <strong>@VM.SelectedMusician.outBalance.ToString("C")</strong>
+                </FluentLabel>
+
+                <FluentStack Orientation="Orientation.Horizontal">
+                    <FluentLabel Style="margin-top:5px">Bezahlt:</FluentLabel>
+                    <FluentNumberField @bind-Value="@VM.PayAmount"
+                                       Min="0.0"
+                                       Step="0.5" />
+                </FluentStack>
+
+                <FluentButton OnClick="@VM.Pay" Disabled="@(VM.PayAmount == 0 || VM.PayAmount == null)" Style="width:100%;margin-top:10px">
+                    Bezahlen
+                </FluentButton>
+            </FluentStack>
+        }
+        else
+        {
+            <FluentLabel>Bitte wähle einen Musiker aus.</FluentLabel>
+        }
+    </FluentCard>
+</FluentStack>
+
+@code {
+    protected override void OnInitialized()
+    {
+        VM.Initialize();
+    }
+}

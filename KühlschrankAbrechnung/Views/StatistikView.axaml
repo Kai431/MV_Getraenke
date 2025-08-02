@@ -1,0 +1,177 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KühlschrankAbrechnung.StatistikView"
+             x:DataType="vm:StatistikViewModel"
+             xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+             xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+             xmlns:charts="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+             Background="White">
+  <Grid RowDefinitions="Auto,*">
+    <!-- HEADER -->
+    <Border Background="#2196F3" Padding="20,0" Height="60" BorderBrush="#1976D2" BorderThickness="0,0,0,2">
+      <DockPanel VerticalAlignment="Center">
+        <TextBlock Text="Statistik"
+                   VerticalAlignment="Center"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   DockPanel.Dock="Left"/>
+
+        <Button Content="Zurück"
+                FontSize="22"
+                FontWeight="Bold"
+                Foreground="White"
+                Padding="10,4"
+                BorderBrush="White"
+                BorderThickness="1.5"
+                CornerRadius="8"
+                VerticalContentAlignment="Center"
+                Background="Transparent"
+                HorizontalAlignment="Right"
+                HorizontalContentAlignment="Center"
+                Command="{Binding GoBackCommand}"
+                DockPanel.Dock="Right"/>
+      </DockPanel>
+    </Border>
+  <ScrollViewer Grid.Row="1">
+    <StackPanel Spacing="24" Margin="20">
+
+      <!-- Section: Dashboard -->
+      <Border Background="White" CornerRadius="12" Padding="16" Margin="0,0,0,10"
+              BorderBrush="#CCC" BorderThickness="1" >
+        <StackPanel Spacing="16">
+          <TextBlock Text="📊 Dashboard"
+                     FontSize="24"
+                     FontWeight="Bold"
+                     Foreground="#2C3E50"
+                     Margin="0,0,0,6"/>
+
+          <WrapPanel ItemWidth="180" ItemHeight="90" HorizontalAlignment="Center" Orientation="Horizontal">
+
+            <Border Background="#E3F2FD" Margin="6" CornerRadius="12" Padding="12">
+              <StackPanel>
+                <TextBlock Text="Kassastand" FontWeight="Bold" Foreground="#1565C0"/>
+                <TextBlock Text="{Binding KassaStand, StringFormat={}{0:F2} €}" FontSize="16" FontWeight="SemiBold" Foreground="#0D47A1"/>
+              </StackPanel>
+            </Border>
+
+            <Border Background="#E8F5E9" Margin="6" CornerRadius="12" Padding="12">
+              <StackPanel>
+                <TextBlock Text="Einnahmen" FontWeight="Bold" Foreground="#2E7D32"/>
+                <TextBlock Text="{Binding GesamtEinnahmen, StringFormat={}{0:F2} €}" FontSize="16" FontWeight="SemiBold" Foreground="#1B5E20"/>
+              </StackPanel>
+            </Border>
+
+            <Border Background="#FFEBEE" Margin="6" CornerRadius="12" Padding="12">
+              <StackPanel>
+                <TextBlock Text="Ausgaben" FontWeight="Bold" Foreground="#D32F2F"/>
+                <TextBlock Text="{Binding GesamtAusgaben, StringFormat={}{0:F2} €}" FontSize="16" FontWeight="SemiBold" Foreground="#D32F2F"/>
+              </StackPanel>
+            </Border>
+
+            <Border Background="#E1F5FE" Margin="6" CornerRadius="12" Padding="12">
+              <StackPanel>
+                <TextBlock Text="Getränke (L)" FontWeight="Bold" Foreground="#0288D1"/>
+                <TextBlock Text="{Binding GesamtLiter, StringFormat={}{0:F2} L}" FontSize="16" FontWeight="SemiBold" Foreground="#01579B"/>
+              </StackPanel>
+            </Border>
+
+            <Border Background="#F3E5F5" Margin="6" CornerRadius="12" Padding="12">
+              <StackPanel>
+                <TextBlock Text="Getränke (€)" FontWeight="Bold" Foreground="#8E24AA"/>
+                <TextBlock Text="{Binding GesamtKosten, StringFormat={}{0:F2} €}" FontSize="16" FontWeight="SemiBold" Foreground="#6A1B9A"/>
+              </StackPanel>
+            </Border>
+          </WrapPanel>
+        </StackPanel>
+      </Border>
+
+      <!-- Section: Top Trinker -->
+      <Border Background="White" CornerRadius="12" Padding="16" BorderBrush="#CCC" BorderThickness="1">
+        <StackPanel>
+          <TextBlock Text="🥇 Top Trinker"
+                     FontSize="22"
+                     FontWeight="Bold"
+                     Foreground="#2C3E50"
+                     Margin="0,0,0,6"/>
+
+          <ItemsControl ItemsSource="{Binding TopTrinker}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+                <Border BorderThickness="1"
+                        BorderBrush="#DDD"
+                        Background="#F0F0F0"
+                        CornerRadius="8"
+                        Padding="10"
+                        Margin="0,4">
+                  <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                    <TextBlock Text="👤" FontSize="18"/>
+                    <TextBlock Text="{Binding}" FontSize="16" Foreground="Black"/>
+                  </StackPanel>
+                </Border>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </Border>
+
+      <!-- Section: Top Getränke -->
+      <Border Background="White" CornerRadius="12" Padding="16" BorderBrush="#CCC" BorderThickness="1">
+        <StackPanel>
+          <TextBlock Text="🍻 Beliebteste Getränke"
+                     FontSize="22"
+                     FontWeight="Bold"
+                     Foreground="#2C3E50"
+                     Margin="0,0,0,6"/>
+
+          <ItemsControl ItemsSource="{Binding TopGetränke}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+                <Border BorderThickness="1"
+                        BorderBrush="#DDD"
+                        Background="#F9F9F9"
+                        CornerRadius="8"
+                        Padding="10"
+                        Margin="0,4">
+                  <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                    <TextBlock Text="🍺" FontSize="18"/>
+                    <TextBlock Text="{Binding}" FontSize="16" Foreground="Black"/>
+                  </StackPanel>
+                </Border>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </Border>
+
+      <!-- Section: Jahresstatistik -->
+      <Border Background="White" CornerRadius="12" Padding="16" BorderBrush="#CCC" BorderThickness="1">
+        <StackPanel Spacing="20">
+          <TextBlock Text="📈 Jahresübersicht"
+                     FontSize="24"
+                     FontWeight="Bold"
+                     Foreground="#2C3E50"/>
+
+          <!-- Diagramm 1 -->
+          <TextBlock Text="Getrunkene Liter pro Monat" FontWeight="Bold" Foreground="Black"/>
+          <charts:CartesianChart Series="{Binding LiterSeries}"
+                                 XAxes="{Binding MonatsAxis}"
+                                 YAxes="{Binding WertAxisDrinks}"
+                                 Height="200"/>
+
+          <!-- Diagramm 2 -->
+          <TextBlock Text="Kassa Einnahmen und Ausgaben" FontWeight="Bold" Foreground="Black"/>
+          <charts:CartesianChart Series="{Binding KassaSeries}"
+                                 XAxes="{Binding MonatsAxis}"
+                                 YAxes="{Binding WertAxisKassa}"
+                                 Height="200"/>
+        </StackPanel>
+      </Border>
+
+    </StackPanel>
+  </ScrollViewer>
+    </Grid>
+  </UserControl>

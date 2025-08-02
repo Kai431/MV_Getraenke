@@ -1,0 +1,36 @@
+﻿@page "/"
+@inject DashBoardViewModel VM
+<PageTitle>Dashboard</PageTitle>
+<div style="display:flex; align-items:center;">
+    <iconify-icon icon="mdi:monitor-dashboard" style="font-size:32px; color:#122360; margin-right:8px;" />
+    <div>
+        <div style="font-size:28px; font-weight:bold; color:#2b2b2b;">Dashboard</div>
+    </div>
+</div>
+<div style="font-size:14px; color:#666;">Willkommen zurück, Kantinör! • @DateTime.Now.ToString("dd.MM.yyyy")</div>
+
+<FluentDivider />
+
+<FluentGrid Columns="2" Gap="16px">
+
+    @foreach (var card in VM.DashboardCards)
+    {
+        <FluentCard Height="100px" style=@($"padding:16px; background-color: {card.BackgroundColor}; border-color: {card.MainColor}; margin:10px")>
+            <div style="display:flex; align-items:center;">
+                <div>
+                    <iconify-icon icon=@($"{card.Icon}") style=@($"font-size:28px; color:{card.MainColor}; margin-right:10px;") />
+                </div>
+                <div style=@($"font-weight:bold; color:{card.MainColor}; font-size:19px;")>@card.Title</div>
+            </div>
+            <FluentLabel style=@($"font-size:20px; color:{card.ValueColor};")>@card.Value</FluentLabel>
+        </FluentCard>
+    }
+
+</FluentGrid>
+
+@code {
+    protected override void OnInitialized()
+    {
+        VM.Initialize();
+    }
+}

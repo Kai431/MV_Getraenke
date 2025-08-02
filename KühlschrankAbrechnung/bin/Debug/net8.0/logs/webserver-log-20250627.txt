@@ -1,0 +1,507 @@
+2025-06-27 18:18:55.841 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-27 18:18:55.926 +02:00 [INF] User profile is available. Using 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-27 18:18:55.979 +02:00 [DBG] Hosting starting
+2025-06-27 18:18:55.999 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-3bfa30d7-5e03-434e-8453-cef78345e700.xml'.
+2025-06-27 18:18:56.005 +02:00 [DBG] Found key {3bfa30d7-5e03-434e-8453-cef78345e700}.
+2025-06-27 18:18:56.013 +02:00 [DBG] Considering key {3bfa30d7-5e03-434e-8453-cef78345e700} with expiration date 2025-07-09 10:55:17Z as default key.
+2025-06-27 18:18:56.015 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-27 18:18:56.017 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-06-27 18:18:56.018 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-27 18:18:56.020 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-06-27 18:18:56.021 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-06-27 18:18:56.022 +02:00 [DBG] Using key {3bfa30d7-5e03-434e-8453-cef78345e700} as the default key.
+2025-06-27 18:18:56.022 +02:00 [DBG] Key ring with default key {3bfa30d7-5e03-434e-8453-cef78345e700} was loaded during application startup.
+2025-06-27 18:18:56.059 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-06-27 18:18:56.059 +02:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-06-27 18:18:56.195 +02:00 [INF] Now listening on: http://0.0.0.0:5000
+2025-06-27 18:18:56.195 +02:00 [DBG] Loaded hosting startup assembly ManagementWeb
+2025-06-27 18:18:56.197 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-27 18:18:56.197 +02:00 [INF] Hosting environment: Development
+2025-06-27 18:18:56.197 +02:00 [INF] Content root path: D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Debug\net8.0\
+2025-06-27 18:18:56.197 +02:00 [DBG] Hosting started
+2025-06-27 18:18:56.197 +02:00 [INF] Webserver gestartet
+2025-06-27 18:19:23.066 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-27 18:19:23.118 +02:00 [INF] User profile is available. Using 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-27 18:19:23.150 +02:00 [DBG] Hosting starting
+2025-06-27 18:19:23.160 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-3bfa30d7-5e03-434e-8453-cef78345e700.xml'.
+2025-06-27 18:19:23.166 +02:00 [DBG] Found key {3bfa30d7-5e03-434e-8453-cef78345e700}.
+2025-06-27 18:19:23.172 +02:00 [DBG] Considering key {3bfa30d7-5e03-434e-8453-cef78345e700} with expiration date 2025-07-09 10:55:17Z as default key.
+2025-06-27 18:19:23.174 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-27 18:19:23.175 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-06-27 18:19:23.176 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-27 18:19:23.177 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-06-27 18:19:23.178 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-06-27 18:19:23.179 +02:00 [DBG] Using key {3bfa30d7-5e03-434e-8453-cef78345e700} as the default key.
+2025-06-27 18:19:23.179 +02:00 [DBG] Key ring with default key {3bfa30d7-5e03-434e-8453-cef78345e700} was loaded during application startup.
+2025-06-27 18:19:23.202 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-06-27 18:19:23.202 +02:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-06-27 18:19:23.298 +02:00 [INF] Now listening on: http://0.0.0.0:5000
+2025-06-27 18:19:23.298 +02:00 [DBG] Loaded hosting startup assembly ManagementWeb
+2025-06-27 18:19:23.299 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-27 18:19:23.299 +02:00 [INF] Hosting environment: Development
+2025-06-27 18:19:23.299 +02:00 [INF] Content root path: D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Debug\net8.0\
+2025-06-27 18:19:23.299 +02:00 [DBG] Hosting started
+2025-06-27 18:19:23.299 +02:00 [INF] Webserver gestartet
+2025-06-27 18:19:47.745 +02:00 [DBG] Connection id "0HNDLIPNOI108" accepted.
+2025-06-27 18:19:47.756 +02:00 [DBG] Connection id "0HNDLIPNOI108" started.
+2025-06-27 18:19:47.834 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-06-27 18:19:47.836 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-27 18:19:47.842 +02:00 [DBG] The request path / does not match a supported file type
+2025-06-27 18:19:47.860 +02:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-06-27 18:19:47.861 +02:00 [DBG] Request matched endpoint '/ (/)'
+2025-06-27 18:19:47.862 +02:00 [INF] Executing endpoint '/ (/)'
+2025-06-27 18:19:47.886 +02:00 [DBG] Begin render root component 'App' with page 'DashBoardView'.
+2025-06-27 18:19:47.896 +02:00 [DBG] Initializing root component 0 (ManagementWeb.Components.App)
+2025-06-27 18:19:47.899 +02:00 [DBG] Rendering component 0 of type ManagementWeb.Components.App
+2025-06-27 18:19:47.905 +02:00 [DBG] Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (ManagementWeb.Components.App)
+2025-06-27 18:19:47.905 +02:00 [DBG] Initializing component 2 (ManagementWeb.Components.Routes) as child of 0 (ManagementWeb.Components.App)
+2025-06-27 18:19:47.906 +02:00 [DBG] Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-06-27 18:19:47.906 +02:00 [DBG] Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-06-27 18:19:47.907 +02:00 [DBG] Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-06-27 18:19:47.907 +02:00 [DBG] Rendering component 2 of type ManagementWeb.Components.Routes
+2025-06-27 18:19:47.909 +02:00 [DBG] Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (ManagementWeb.Components.Routes)
+2025-06-27 18:19:47.913 +02:00 [DBG] Navigating to component ManagementWeb.Components.Views.DashBoardView in response to path '/' with base URI 'http://localhost:5000/'
+2025-06-27 18:19:47.914 +02:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:47.916 +02:00 [DBG] Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-06-27 18:19:47.917 +02:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:47.917 +02:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:47.917 +02:00 [DBG] Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-06-27 18:19:47.917 +02:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:47.917 +02:00 [DBG] Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-06-27 18:19:47.917 +02:00 [DBG] Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-06-27 18:19:47.918 +02:00 [DBG] Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-06-27 18:19:47.918 +02:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:47.918 +02:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:47.918 +02:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:47.918 +02:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:47.918 +02:00 [DBG] Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-06-27 18:19:47.919 +02:00 [DBG] Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2025-06-27 18:19:47.919 +02:00 [DBG] Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-06-27 18:19:47.919 +02:00 [DBG] Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-06-27 18:19:47.919 +02:00 [DBG] Initializing component 11 (ManagementWeb.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2025-06-27 18:19:47.920 +02:00 [DBG] Rendering component 11 of type ManagementWeb.Components.Layout.MainLayout
+2025-06-27 18:19:47.922 +02:00 [DBG] Initializing component 12 (ManagementWeb.Components.Layout.NavMenu) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:47.923 +02:00 [DBG] Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:47.981 +02:00 [DBG] Connection id "0HNDLIPNOI109" accepted.
+2025-06-27 18:19:47.984 +02:00 [DBG] Connection id "0HNDLIPNOI109" started.
+2025-06-27 18:19:47.997 +02:00 [DBG] Initializing component 14 (ManagementWeb.Components.Views.DashBoardView) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:48.000 +02:00 [DBG] Initializing component 15 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:48.000 +02:00 [DBG] Rendering component 12 of type ManagementWeb.Components.Layout.NavMenu
+2025-06-27 18:19:48.002 +02:00 [DBG] Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.003 +02:00 [DBG] Initializing component 17 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.004 +02:00 [DBG] Initializing component 18 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.004 +02:00 [DBG] Initializing component 19 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.004 +02:00 [DBG] Initializing component 20 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.004 +02:00 [DBG] Initializing component 21 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.004 +02:00 [DBG] Initializing component 22 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:48.004 +02:00 [DBG] Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:48.010 +02:00 [DBG] Initializing component 23 (Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2025-06-27 18:19:48.011 +02:00 [DBG] Rendering component 14 of type ManagementWeb.Components.Views.DashBoardView
+2025-06-27 18:19:48.013 +02:00 [DBG] Initializing component 24 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 14 (ManagementWeb.Components.Views.DashBoardView)
+2025-06-27 18:19:48.014 +02:00 [DBG] Initializing component 25 (Microsoft.FluentUI.AspNetCore.Components.FluentDivider) as child of 14 (ManagementWeb.Components.Views.DashBoardView)
+2025-06-27 18:19:48.017 +02:00 [DBG] Initializing component 26 (Microsoft.FluentUI.AspNetCore.Components.FluentGrid) as child of 14 (ManagementWeb.Components.Views.DashBoardView)
+2025-06-27 18:19:48.017 +02:00 [DBG] Rendering component 15 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:48.018 +02:00 [DBG] Initializing component 27 (Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider) as child of 15 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2025-06-27 18:19:48.019 +02:00 [DBG] Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.019 +02:00 [DBG] Rendering component 17 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.019 +02:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.020 +02:00 [DBG] Rendering component 19 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.020 +02:00 [DBG] Rendering component 20 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.020 +02:00 [DBG] Rendering component 21 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.020 +02:00 [DBG] Rendering component 22 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.020 +02:00 [DBG] Rendering component 23 of type Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider
+2025-06-27 18:19:48.021 +02:00 [DBG] Rendering component 24 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-06-27 18:19:48.021 +02:00 [DBG] Initializing component 28 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 24 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2025-06-27 18:19:48.021 +02:00 [DBG] Rendering component 25 of type Microsoft.FluentUI.AspNetCore.Components.FluentDivider
+2025-06-27 18:19:48.022 +02:00 [DBG] Rendering component 26 of type Microsoft.FluentUI.AspNetCore.Components.FluentGrid
+2025-06-27 18:19:48.023 +02:00 [DBG] Initializing component 29 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid]) as child of 26 (Microsoft.FluentUI.AspNetCore.Components.FluentGrid)
+2025-06-27 18:19:48.023 +02:00 [DBG] Rendering component 27 of type Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider
+2025-06-27 18:19:48.023 +02:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:48.023 +02:00 [DBG] Initializing component 30 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-06-27 18:19:48.024 +02:00 [DBG] Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:48.024 +02:00 [DBG] Rendering component 29 of type Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid]
+2025-06-27 18:19:48.027 +02:00 [DBG] Initializing component 31 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 29 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid])
+2025-06-27 18:19:48.027 +02:00 [DBG] Initializing component 32 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 29 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid])
+2025-06-27 18:19:48.027 +02:00 [DBG] Initializing component 33 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 29 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid])
+2025-06-27 18:19:48.027 +02:00 [DBG] Initializing component 34 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 29 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid])
+2025-06-27 18:19:48.027 +02:00 [DBG] Initializing component 35 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 29 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid])
+2025-06-27 18:19:48.027 +02:00 [DBG] Rendering component 30 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:48.028 +02:00 [DBG] Rendering component 31 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.029 +02:00 [DBG] Initializing component 36 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 31 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:48.030 +02:00 [DBG] Rendering component 32 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.030 +02:00 [DBG] Initializing component 37 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 32 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:48.030 +02:00 [DBG] Rendering component 33 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.030 +02:00 [DBG] Initializing component 38 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 33 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:48.030 +02:00 [DBG] Rendering component 34 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.030 +02:00 [DBG] Initializing component 39 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 34 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:48.030 +02:00 [DBG] Rendering component 35 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.030 +02:00 [DBG] Initializing component 40 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 35 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:48.030 +02:00 [DBG] Rendering component 36 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.033 +02:00 [DBG] Rendering component 37 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.034 +02:00 [DBG] Rendering component 38 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.034 +02:00 [DBG] Rendering component 39 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.034 +02:00 [DBG] Rendering component 40 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.098 +02:00 [DBG] A new antiforgery cookie token was created.
+2025-06-27 18:19:48.115 +02:00 [INF] Executed endpoint '/ (/)'
+2025-06-27 18:19:48.115 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.121 +02:00 [DBG] Disposing component 0 of type ManagementWeb.Components.App
+2025-06-27 18:19:48.121 +02:00 [DBG] Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-06-27 18:19:48.121 +02:00 [DBG] Disposing component 2 of type ManagementWeb.Components.Routes
+2025-06-27 18:19:48.121 +02:00 [DBG] Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 31 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 11 of type ManagementWeb.Components.Layout.MainLayout
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 12 of type ManagementWeb.Components.Layout.NavMenu
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 14 of type ManagementWeb.Components.Views.DashBoardView
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 15 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 17 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 18 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 19 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 20 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 21 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 22 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 23 of type Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 24 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-06-27 18:19:48.122 +02:00 [DBG] Disposing component 25 of type Microsoft.FluentUI.AspNetCore.Components.FluentDivider
+2025-06-27 18:19:48.123 +02:00 [DBG] Disposing component 26 of type Microsoft.FluentUI.AspNetCore.Components.FluentGrid
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 27 of type Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 28 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 29 of type Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.FluentUI.AspNetCore.Components.FluentGrid]
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 30 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 32 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 33 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 34 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 35 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 36 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 37 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 38 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 39 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.124 +02:00 [DBG] Disposing component 40 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:48.125 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/html; charset=utf-8 299.0171ms
+2025-06-27 18:19:48.223 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ManagementWeb.styles.css - null null
+2025-06-27 18:19:48.231 +02:00 [INF] The file /ManagementWeb.styles.css was not modified
+2025-06-27 18:19:48.231 +02:00 [DBG] Handled. Status code: 304 File: /ManagementWeb.styles.css
+2025-06-27 18:19:48.233 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.233 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ManagementWeb.styles.css - 304 null text/css 10.5675ms
+2025-06-27 18:19:48.245 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_monitor-dashboard.svg - null null
+2025-06-27 18:19:48.247 +02:00 [INF] The file /iconify/mdi_monitor-dashboard.svg was not modified
+2025-06-27 18:19:48.247 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_monitor-dashboard.svg
+2025-06-27 18:19:48.247 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.247 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_monitor-dashboard.svg - 304 null image/svg+xml 1.9169ms
+2025-06-27 18:19:48.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_poll.svg - null null
+2025-06-27 18:19:48.255 +02:00 [INF] The file /iconify/mdi_poll.svg was not modified
+2025-06-27 18:19:48.255 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_poll.svg
+2025-06-27 18:19:48.255 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.255 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_poll.svg - 304 null image/svg+xml 0.6096ms
+2025-06-27 18:19:48.271 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_account-group.svg - null null
+2025-06-27 18:19:48.271 +02:00 [INF] The file /iconify/mdi_account-group.svg was not modified
+2025-06-27 18:19:48.271 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_account-group.svg
+2025-06-27 18:19:48.271 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.271 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_account-group.svg - 304 null image/svg+xml 0.6603ms
+2025-06-27 18:19:48.273 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_cash-multiple.svg - null null
+2025-06-27 18:19:48.273 +02:00 [INF] The file /iconify/mdi_cash-multiple.svg was not modified
+2025-06-27 18:19:48.273 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_cash-multiple.svg
+2025-06-27 18:19:48.273 +02:00 [DBG] Connection id "0HNDLIPNOI109" completed keep alive response.
+2025-06-27 18:19:48.273 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_cash-multiple.svg - 304 null image/svg+xml 0.6377ms
+2025-06-27 18:19:48.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_swap-horizontal.svg - null null
+2025-06-27 18:19:48.276 +02:00 [INF] The file /iconify/mdi_swap-horizontal.svg was not modified
+2025-06-27 18:19:48.276 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_swap-horizontal.svg
+2025-06-27 18:19:48.276 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.276 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_swap-horizontal.svg - 304 null image/svg+xml 0.3811ms
+2025-06-27 18:19:48.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/blazor.web.js - null null
+2025-06-27 18:19:48.277 +02:00 [DBG] The request path /_framework/blazor.web.js does not match an existing file
+2025-06-27 18:19:48.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/iconify-icon.min.js - null null
+2025-06-27 18:19:48.277 +02:00 [DBG] The request path /lib/iconify-icon.min.js does not match an existing file
+2025-06-27 18:19:48.280 +02:00 [DBG] No candidates found for the request path '/lib/iconify-icon.min.js'
+2025-06-27 18:19:48.280 +02:00 [DBG] Request did not match any endpoints
+2025-06-27 18:19:48.282 +02:00 [DBG] 1 candidate(s) found for the request path '/_framework/blazor.web.js'
+2025-06-27 18:19:48.285 +02:00 [DBG] Request matched endpoint 'Blazor web static files'
+2025-06-27 18:19:48.286 +02:00 [INF] Executing endpoint 'Blazor web static files'
+2025-06-27 18:19:48.287 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.287 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/iconify-icon.min.js - 404 0 null 9.8662ms
+2025-06-27 18:19:48.303 +02:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-27 18:19:48.303 +02:00 [DBG] Handled. Status code: 304 File: /_framework/blazor.web.js
+2025-06-27 18:19:48.304 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/lib/iconify-icon.min.js, Response status code: 404
+2025-06-27 18:19:48.305 +02:00 [INF] Executed endpoint 'Blazor web static files'
+2025-06-27 18:19:48.305 +02:00 [DBG] Connection id "0HNDLIPNOI109" completed keep alive response.
+2025-06-27 18:19:48.305 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_cup.svg - null null
+2025-06-27 18:19:48.305 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/blazor.web.js - 304 null text/javascript 29.2246ms
+2025-06-27 18:19:48.305 +02:00 [INF] The file /iconify/mdi_cup.svg was not modified
+2025-06-27 18:19:48.305 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_cup.svg
+2025-06-27 18:19:48.305 +02:00 [DBG] Connection id "0HNDLIPNOI108" completed keep alive response.
+2025-06-27 18:19:48.305 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_cup.svg - 304 null image/svg+xml 0.4669ms
+2025-06-27 18:19:48.306 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/iconify/mdi_download.svg - null null
+2025-06-27 18:19:48.307 +02:00 [INF] The file /iconify/mdi_download.svg was not modified
+2025-06-27 18:19:48.307 +02:00 [DBG] Handled. Status code: 304 File: /iconify/mdi_download.svg
+2025-06-27 18:19:48.307 +02:00 [DBG] Connection id "0HNDLIPNOI109" completed keep alive response.
+2025-06-27 18:19:48.307 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/iconify/mdi_download.svg - 304 null image/svg+xml 0.4685ms
+2025-06-27 18:19:48.363 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-27 18:19:48.363 +02:00 [DBG] POST requests are not supported
+2025-06-27 18:19:48.365 +02:00 [DBG] 1 candidate(s) found for the request path '/_blazor/negotiate'
+2025-06-27 18:19:48.365 +02:00 [DBG] Request matched endpoint 'null'
+2025-06-27 18:19:48.365 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-27 18:19:48.371 +02:00 [DBG] New connection j2tomJrivFY3U_Cwk03mRg created.
+2025-06-27 18:19:48.386 +02:00 [DBG] Sending negotiation response.
+2025-06-27 18:19:48.387 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-27 18:19:48.388 +02:00 [DBG] Connection id "0HNDLIPNOI109" completed keep alive response.
+2025-06-27 18:19:48.388 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 24.6564ms
+2025-06-27 18:19:48.591 +02:00 [DBG] Connection id "0HNDLIPNOI10A" accepted.
+2025-06-27 18:19:48.591 +02:00 [DBG] Connection id "0HNDLIPNOI10A" started.
+2025-06-27 18:19:48.592 +02:00 [DBG] Connection id "0HNDLIPNOI10B" accepted.
+2025-06-27 18:19:48.592 +02:00 [DBG] Connection id "0HNDLIPNOI10B" started.
+2025-06-27 18:19:48.594 +02:00 [DBG] Connection id "0HNDLIPNOI10C" accepted.
+2025-06-27 18:19:48.594 +02:00 [DBG] Connection id "0HNDLIPNOI10C" started.
+2025-06-27 18:19:48.695 +02:00 [DBG] Connection id "0HNDLIPNOI10D" accepted.
+2025-06-27 18:19:48.695 +02:00 [DBG] Connection id "0HNDLIPNOI10D" started.
+2025-06-27 18:19:48.696 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_blazor?id=-OaT88GbUCFt0R8d4NVqLg - null null
+2025-06-27 18:19:48.697 +02:00 [DBG] The request path /_blazor does not match a supported file type
+2025-06-27 18:19:48.697 +02:00 [DBG] 1 candidate(s) found for the request path '/_blazor'
+2025-06-27 18:19:48.697 +02:00 [DBG] Request matched endpoint 'null'
+2025-06-27 18:19:48.697 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-27 18:19:48.701 +02:00 [DBG] Establishing new connection.
+2025-06-27 18:19:48.705 +02:00 [DBG] OnConnectedAsync started.
+2025-06-27 18:19:48.716 +02:00 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-27 18:19:48.726 +02:00 [DBG] Found protocol implementation for requested protocol: blazorpack.
+2025-06-27 18:19:48.728 +02:00 [DBG] Completed connection handshake. Using HubProtocol 'blazorpack'.
+2025-06-27 18:19:48.743 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "0", Target: "StartCircuit", Arguments: [ http://localhost:5000/, http://localhost:5000/, [], CfDJ8Ncw+jsDXk5DhFPO94NF5wDljROdpOWhSpSem+9YGRIMu/H2AdTqQKkD+MO7qdgNozL6Ip/CJUHB8KvYTyjcSWumNlt2IsrTIVW+17/vtdVBbaY2awDmMUtJX1T9+mvWek29wKD8KlTayHtSV5En48MVhCG819n+pKAk6KE+Ps/7N5Kagjes2+K/K59/2hCM5VTd3vgXAXbxL7dgLb/02+c9/A0mvVwvH/mPMBbK0BBzFja/dXRJ0G5z9bpJ8PB9CGeSf+vLrpy9EocQ/FWuOIIq7/Uw38G36gCk5BuX8VDLLLAttoE1EZZ7zb0K0xk5OCb8el0HiqXoVGbj+pA+GQxacWFno6AE8SLBrzBmk6gnwvg/emyYRl6/VeSQobeTDO7geN6JKIaq4Emo2NP41dEE46Ryq8Igo8cms4MfsdyaV/U10LZPuL1S66R2uNtMwW89wMt/jXWGvnnE9cMDO608lQ7Q8CWf18W5QB758bzqvtmba9ImFQKwaztCipW25TcHa40m0sIJanwThJ/7AMF+/l9s7Go2q2HqTf+IEjIY ], StreamIds: [  ] }.
+2025-06-27 18:19:48.796 +02:00 [DBG] Begin invoke JS interop '2': 'Blazor._internal.attachWebRendererInterop'
+2025-06-27 18:19:48.801 +02:00 [DBG] Created circuit OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew for connection j2tomJrivFY3U_Cwk03mRg
+2025-06-27 18:19:48.803 +02:00 [DBG] Circuit initialization started.
+2025-06-27 18:19:48.803 +02:00 [DBG] Circuit initialization succeeded.
+2025-06-27 18:19:48.808 +02:00 [DBG] Created circuit 'OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew' with secret '(redacted)' for 'j2tomJrivFY3U_Cwk03mRg'
+2025-06-27 18:19:48.809 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "EndInvokeJSFromDotNet", Arguments: [ 2, True, [2,true,null] ], StreamIds: [  ] }.
+2025-06-27 18:19:48.813 +02:00 [DBG] The JS interop call with callback id '2' succeeded.
+2025-06-27 18:19:48.817 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":1,"operations":[{"type":"add","ssrComponentId":1,"marker":{"type":"server","prerenderId":"ef5ba888f5494294bd1320e13cf9bfc9","key":{"locationHash":"EAFDEFE2256366350F2EDE488E0A720BA71FB754C3843B2E2A496CD0B24AF22A:17","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8Ncw+jsDXk5DhFPO94NF5wBNWCC3ctuIiAbVaXswAohoW+Pzla0SqhHEAQxWyV3o23DrnCN2Hunw8v2lEHrF9SilNyDg8GN/+ph4YkFG++FDrfcEvM+fUFaTYDR0+cHxyiutIpiOJ9k7oqaqZVANN50dt9pI/hbJHbsBrkSDY94qhKjc5F6cPMkTGv5TvgPmVxYa7uh6iuqTht5VcBipBevB2RGTa0+wnXjgOt1gIIFXRj4Jy40CXd4R1ynhQxHafRHoJl++qHwUL05JQTITqJk786mT5ni+aeguWlfwzrNFbU4UYrumfubfGp9BgQJm6MY7LX3/vTLcRGvyDDGduI9kXAfv59mMYpO+OU5Wo/2qRZW5zG0rXFmm1y80NKn/19LM2I5xgDZD35au02YAmrpuQYedShJ+AL1VHyRD2rfNVF8e6GoSHKEE47L6PtLLXT11TZ1cuLGl9ohp4mqmf60TgI+gmmS26m04+MWivGaBqS3C1nLGhysFI+qCJS3I+qZLN/awcfSEEVbftpFy4VV8jk9Sbh5YIcCOF+xYMJHXmGm06GY+LUeydG3SXsK+i0LI6Z978CFuXkbBdD8wSuW59OkUUQCMovu440X42+hAI0uq/cd2NUN/0t9OnFyNRh+IDs5Ob3ZfPviTp0J1Sipustrzin69ypjjrkYCW/jpb2Wc8PVG6HtXRPOuzyYLDoYkdce1quGVmArR0e+AQXp9xy3+T6oQrDkKbR/+t+WMFxSSTHvM8fZMZGNjcCefqGP7pICIlihgl07fkd1h63lNCwkqOYfT3UYERJxE5eU6l5Z3yAfQ4/gEUBIAKvx/o4wufc/NnWaZUgAMpLnuwR9JDXP2qOi7cTC5+tYi7Y2G","uniqueId":0}},{"type":"add","ssrComponentId":2,"marker":{"type":"server","prerenderId":"5d8865115a854f97ba1551e205af3344","key":{"locationHash":"E882B23BD3275791DD7A03C9B8AE3DB25E4F6F222E1664F3B5B5F1628D2C3A6A:23","formattedComponentKey":""},"sequence":1,"descriptor":"CfDJ8Ncw+jsDXk5DhFPO94NF5wDpftrvtoa7dxtVJfFxINg8ygnvJe4/mrG5h5qHuS9Z5kHcRe2tXwhocYQUojZQ3mDMEfI3KrW0yvnvQDhy+0BidCdQpE3FR5cbGCoY1WPxGJnJWZLMCIwDW4hAp2AsSdMKeZlvLxIJoAd0xZHNIl1f/e21XlqyLlzWa9xx7uZHfQ7p0YRJCxkSJZnCG6RtSbo2FWJXRREEgewoFSws6Miw7h5x7pFgrWhSutZ0sEXoPwQnFGf/m57pUgKvNS4gsoONPhdpFDo0nw74HJSZK8Sma/1uNEM+RvkWjvo6piwjG+EyHHT6UhGYZSglgiVwfBabmzkPfk8xI0FLbm/lgP1Zb82HSUfpZJM+5+QinmRHUVVjq2nlXw2dGI1QPrEyiCDniz+GYXiJdmu5VBAFzvYPp9rbvqrQ4uUJgDqpuFdJ3i/ERN6EtHjghBZuOVga8otoyBJFfyqZCDd+bvpDIauVw7Aq2W6z47YoynRNkeXtZavG2/TtJOGzo4jHM7051sscH4H+PPfRholpy8OWHGT2RCdFqKaLlbOmlFUdXAy2mtByxSKU3O6/22/8fYll8BRg8t+8osKmgHTKHTmxCc9P","uniqueId":1}}]}, CfDJ8Ncw+jsDXk5DhFPO94NF5wDljROdpOWhSpSem+9YGRIMu/H2AdTqQKkD+MO7qdgNozL6Ip/CJUHB8KvYTyjcSWumNlt2IsrTIVW+17/vtdVBbaY2awDmMUtJX1T9+mvWek29wKD8KlTayHtSV5En48MVhCG819n+pKAk6KE+Ps/7N5Kagjes2+K/K59/2hCM5VTd3vgXAXbxL7dgLb/02+c9/A0mvVwvH/mPMBbK0BBzFja/dXRJ0G5z9bpJ8PB9CGeSf+vLrpy9EocQ/FWuOIIq7/Uw38G36gCk5BuX8VDLLLAttoE1EZZ7zb0K0xk5OCb8el0HiqXoVGbj+pA+GQxacWFno6AE8SLBrzBmk6gnwvg/emyYRl6/VeSQobeTDO7geN6JKIaq4Emo2NP41dEE46Ryq8Igo8cms4MfsdyaV/U10LZPuL1S66R2uNtMwW89wMt/jXWGvnnE9cMDO608lQ7Q8CWf18W5QB758bzqvtmba9ImFQKwaztCipW25TcHa40m0sIJanwThJ/7AMF+/l9s7Go2q2HqTf+IEjIY ], StreamIds: [  ] }.
+2025-06-27 18:19:48.857 +02:00 [DBG] Update root components started.
+2025-06-27 18:19:48.859 +02:00 [DBG] Opening circuit with id 'OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew'.
+2025-06-27 18:19:48.862 +02:00 [DBG] Circuit id 'OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew' connected using connection 'j2tomJrivFY3U_Cwk03mRg'.
+2025-06-27 18:19:48.863 +02:00 [DBG] Initializing root component 0 (Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider)
+2025-06-27 18:19:48.864 +02:00 [DBG] Rendering component 0 of type Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider
+2025-06-27 18:19:48.869 +02:00 [DBG] Sending render batch 2 of size 48 bytes to client j2tomJrivFY3U_Cwk03mRg.
+2025-06-27 18:19:48.872 +02:00 [DBG] Initializing root component 1 (Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider)
+2025-06-27 18:19:48.873 +02:00 [DBG] Rendering component 1 of type Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider
+2025-06-27 18:19:48.873 +02:00 [DBG] Sending render batch 3 of size 48 bytes to client j2tomJrivFY3U_Cwk03mRg.
+2025-06-27 18:19:48.873 +02:00 [DBG] Update root components succeeded.
+2025-06-27 18:19:48.874 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 2,  ], StreamIds: [  ] }.
+2025-06-27 18:19:48.875 +02:00 [DBG] Received confirmation for batch 2
+2025-06-27 18:19:48.877 +02:00 [DBG] Completing batch 2 without error in 10.7657ms.
+2025-06-27 18:19:48.881 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 3,  ], StreamIds: [  ] }.
+2025-06-27 18:19:48.881 +02:00 [DBG] Received confirmation for batch 3
+2025-06-27 18:19:48.881 +02:00 [DBG] Completing batch 3 without error in 8.0773ms.
+2025-06-27 18:19:52.016 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnLocationChanged", Arguments: [ http://localhost:5000/downloads, , True ], StreamIds: [  ] }.
+2025-06-27 18:19:52.019 +02:00 [DBG] Location changing to http://localhost:5000/downloads in circuit 'OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew'.
+2025-06-27 18:19:52.021 +02:00 [DBG] Received notification that the URI has changed to http://localhost:5000/downloads with isIntercepted=true
+2025-06-27 18:19:52.023 +02:00 [DBG] Rendering component 1 of type Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider
+2025-06-27 18:19:52.023 +02:00 [DBG] Sending render batch 4 of size 48 bytes to client j2tomJrivFY3U_Cwk03mRg.
+2025-06-27 18:19:52.024 +02:00 [DBG] Location change to 'http://localhost:5000/downloads' in circuit 'OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew' succeeded.
+2025-06-27 18:19:52.025 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/downloads - null null
+2025-06-27 18:19:52.026 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 4,  ], StreamIds: [  ] }.
+2025-06-27 18:19:52.026 +02:00 [DBG] The request path /downloads does not match a supported file type
+2025-06-27 18:19:52.026 +02:00 [DBG] 1 candidate(s) found for the request path '/downloads'
+2025-06-27 18:19:52.026 +02:00 [DBG] Received confirmation for batch 4
+2025-06-27 18:19:52.026 +02:00 [DBG] Request matched endpoint '/downloads (/downloads)'
+2025-06-27 18:19:52.026 +02:00 [DBG] Completing batch 4 without error in 2.8381ms.
+2025-06-27 18:19:52.026 +02:00 [INF] Executing endpoint '/downloads (/downloads)'
+2025-06-27 18:19:52.029 +02:00 [DBG] Begin render root component 'App' with page 'DownloadsView'.
+2025-06-27 18:19:52.030 +02:00 [DBG] Initializing root component 0 (ManagementWeb.Components.App)
+2025-06-27 18:19:52.031 +02:00 [DBG] Rendering component 0 of type ManagementWeb.Components.App
+2025-06-27 18:19:52.031 +02:00 [DBG] Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (ManagementWeb.Components.App)
+2025-06-27 18:19:52.031 +02:00 [DBG] Initializing component 2 (ManagementWeb.Components.Routes) as child of 0 (ManagementWeb.Components.App)
+2025-06-27 18:19:52.031 +02:00 [DBG] Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-06-27 18:19:52.031 +02:00 [DBG] Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-06-27 18:19:52.031 +02:00 [DBG] Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-06-27 18:19:52.031 +02:00 [DBG] Rendering component 2 of type ManagementWeb.Components.Routes
+2025-06-27 18:19:52.032 +02:00 [DBG] Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (ManagementWeb.Components.Routes)
+2025-06-27 18:19:52.033 +02:00 [DBG] Navigating to component ManagementWeb.Components.Views.DownloadsView in response to path '/downloads' with base URI 'http://localhost:5000/'
+2025-06-27 18:19:52.033 +02:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:52.033 +02:00 [DBG] Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-06-27 18:19:52.033 +02:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:52.033 +02:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:52.033 +02:00 [DBG] Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-06-27 18:19:52.033 +02:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:52.033 +02:00 [DBG] Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-06-27 18:19:52.033 +02:00 [DBG] Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-06-27 18:19:52.034 +02:00 [DBG] Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-06-27 18:19:52.034 +02:00 [DBG] Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-06-27 18:19:52.034 +02:00 [DBG] Initializing component 11 (ManagementWeb.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2025-06-27 18:19:52.034 +02:00 [DBG] Rendering component 11 of type ManagementWeb.Components.Layout.MainLayout
+2025-06-27 18:19:52.034 +02:00 [DBG] Initializing component 12 (ManagementWeb.Components.Layout.NavMenu) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:52.034 +02:00 [DBG] Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:52.034 +02:00 [DBG] Initializing component 14 (ManagementWeb.Components.Views.DownloadsView) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 15 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (ManagementWeb.Components.Layout.MainLayout)
+2025-06-27 18:19:52.066 +02:00 [DBG] Rendering component 12 of type ManagementWeb.Components.Layout.NavMenu
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 17 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 18 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 19 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 20 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 21 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Initializing component 22 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (ManagementWeb.Components.Layout.NavMenu)
+2025-06-27 18:19:52.066 +02:00 [DBG] Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:52.068 +02:00 [DBG] Initializing component 23 (Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2025-06-27 18:19:52.068 +02:00 [DBG] Rendering component 14 of type ManagementWeb.Components.Views.DownloadsView
+2025-06-27 18:19:52.071 +02:00 [DBG] Initializing component 24 (Microsoft.FluentUI.AspNetCore.Components.FluentStack) as child of 14 (ManagementWeb.Components.Views.DownloadsView)
+2025-06-27 18:19:52.072 +02:00 [DBG] Initializing component 25 (Microsoft.FluentUI.AspNetCore.Components.FluentStack) as child of 14 (ManagementWeb.Components.Views.DownloadsView)
+2025-06-27 18:19:52.072 +02:00 [DBG] Rendering component 15 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:52.074 +02:00 [DBG] Initializing component 26 (Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider) as child of 15 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 17 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 19 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 20 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 21 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 22 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 23 of type Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider
+2025-06-27 18:19:52.074 +02:00 [DBG] Rendering component 24 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.077 +02:00 [DBG] Rendering component 25 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.077 +02:00 [DBG] Initializing component 27 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 25 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.077 +02:00 [DBG] Initializing component 28 (Microsoft.FluentUI.AspNetCore.Components.FluentCard) as child of 25 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.077 +02:00 [DBG] Rendering component 26 of type Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider
+2025-06-27 18:19:52.077 +02:00 [DBG] Rendering component 27 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:52.077 +02:00 [DBG] Initializing component 29 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 27 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:52.077 +02:00 [DBG] Initializing component 30 (Microsoft.FluentUI.AspNetCore.Components.FluentStack) as child of 27 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:52.077 +02:00 [DBG] Rendering component 28 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:52.077 +02:00 [DBG] Initializing component 31 (Microsoft.FluentUI.AspNetCore.Components.FluentLabel) as child of 28 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:52.077 +02:00 [DBG] Initializing component 32 (Microsoft.FluentUI.AspNetCore.Components.FluentStack) as child of 28 (Microsoft.FluentUI.AspNetCore.Components.FluentCard)
+2025-06-27 18:19:52.077 +02:00 [DBG] Rendering component 29 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:52.078 +02:00 [DBG] Rendering component 30 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.079 +02:00 [DBG] Initializing component 33 (Microsoft.FluentUI.AspNetCore.Components.FluentButton) as child of 30 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.079 +02:00 [DBG] Initializing component 34 (Microsoft.FluentUI.AspNetCore.Components.FluentButton) as child of 30 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.079 +02:00 [DBG] Rendering component 31 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:52.080 +02:00 [DBG] Rendering component 32 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.080 +02:00 [DBG] Initializing component 35 (Microsoft.FluentUI.AspNetCore.Components.FluentButton) as child of 32 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.080 +02:00 [DBG] Initializing component 36 (Microsoft.FluentUI.AspNetCore.Components.FluentButton) as child of 32 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.080 +02:00 [DBG] Initializing component 37 (Microsoft.FluentUI.AspNetCore.Components.FluentButton) as child of 32 (Microsoft.FluentUI.AspNetCore.Components.FluentStack)
+2025-06-27 18:19:52.080 +02:00 [DBG] Rendering component 33 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.116 +02:00 [DBG] Initializing component 38 (Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+ArrowDownload]) as child of 33 (Microsoft.FluentUI.AspNetCore.Components.FluentButton)
+2025-06-27 18:19:52.117 +02:00 [DBG] Rendering component 34 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.117 +02:00 [DBG] Initializing component 39 (Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+ArrowDownload]) as child of 34 (Microsoft.FluentUI.AspNetCore.Components.FluentButton)
+2025-06-27 18:19:52.117 +02:00 [DBG] Rendering component 35 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.118 +02:00 [DBG] Initializing component 40 (Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]) as child of 35 (Microsoft.FluentUI.AspNetCore.Components.FluentButton)
+2025-06-27 18:19:52.118 +02:00 [DBG] Rendering component 36 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.119 +02:00 [DBG] Initializing component 41 (Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]) as child of 36 (Microsoft.FluentUI.AspNetCore.Components.FluentButton)
+2025-06-27 18:19:52.119 +02:00 [DBG] Rendering component 37 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.119 +02:00 [DBG] Initializing component 42 (Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]) as child of 37 (Microsoft.FluentUI.AspNetCore.Components.FluentButton)
+2025-06-27 18:19:52.119 +02:00 [DBG] Rendering component 38 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+ArrowDownload]
+2025-06-27 18:19:52.122 +02:00 [DBG] Rendering component 39 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+ArrowDownload]
+2025-06-27 18:19:52.122 +02:00 [DBG] Rendering component 40 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]
+2025-06-27 18:19:52.122 +02:00 [DBG] Rendering component 41 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]
+2025-06-27 18:19:52.122 +02:00 [DBG] Rendering component 42 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]
+2025-06-27 18:19:52.124 +02:00 [DBG] An antiforgery cookie token was reused.
+2025-06-27 18:19:52.125 +02:00 [DBG] An antiforgery cookie token was reused.
+2025-06-27 18:19:52.125 +02:00 [INF] Executed endpoint '/downloads (/downloads)'
+2025-06-27 18:19:52.125 +02:00 [DBG] Connection id "0HNDLIPNOI109" completed keep alive response.
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 0 of type ManagementWeb.Components.App
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 2 of type ManagementWeb.Components.Routes
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 11 of type ManagementWeb.Components.Layout.MainLayout
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 12 of type ManagementWeb.Components.Layout.NavMenu
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 14 of type ManagementWeb.Components.Views.DownloadsView
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 15 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-06-27 18:19:52.125 +02:00 [DBG] Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 17 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 18 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 19 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 20 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 21 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 22 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 23 of type Microsoft.FluentUI.AspNetCore.Components.FluentMessageBarProvider
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 24 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 25 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 26 of type Microsoft.FluentUI.AspNetCore.Components.FluentDialogProvider
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 27 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 28 of type Microsoft.FluentUI.AspNetCore.Components.FluentCard
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 29 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 30 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 31 of type Microsoft.FluentUI.AspNetCore.Components.FluentLabel
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 32 of type Microsoft.FluentUI.AspNetCore.Components.FluentStack
+2025-06-27 18:19:52.126 +02:00 [DBG] Disposing component 33 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 34 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 35 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 36 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 37 of type Microsoft.FluentUI.AspNetCore.Components.FluentButton
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 38 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+ArrowDownload]
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 39 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+ArrowDownload]
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 40 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 41 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]
+2025-06-27 18:19:52.127 +02:00 [DBG] Disposing component 42 of type Microsoft.FluentUI.AspNetCore.Components.FluentIcon`1[Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24+Database]
+2025-06-27 18:19:52.127 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/downloads - 200 null text/html; charset=utf-8 102.4093ms
+2025-06-27 18:19:52.150 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":2,"operations":[{"type":"update","ssrComponentId":1,"marker":{"type":"server","prerenderId":"ef5ba888f5494294bd1320e13cf9bfc9","key":{"locationHash":"EAFDEFE2256366350F2EDE488E0A720BA71FB754C3843B2E2A496CD0B24AF22A:17","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8Ncw+jsDXk5DhFPO94NF5wBEqMcZUtTtbwmGAGfNfMXC+62OymCL3RhHGLaWWU0nxMPddmp7Aq533nYooJigfmLg6ANjRpOmn78V0+cgSHtCSeUqcQ+XssETYHGG6iFLEl6w1uey/w2+nK1Ig983kah3O7qb7P2ealsYvheOJxmoOLu3J2jvX40UysDlVQqW5YZWHVRXLwekOF4NKr7X0XDdnZU7ZoaTvGaXkNPCt/aC33Ax96iI1/fqmJT7SRBjMSRHt7u2IUii5sZW6Y7oFECY8L/OJELs+lVBqbrLBBP9NtDyvkj1DlwiAI6HhdWio3TFyjHDzLcCS+vP/QU8PNLy6tpLWez7o8y434o3YXQjmkLelCAoDPPqrmjAJblLX09Ofq0IkBVQk6emwq60Bwuaaw7BWXRmgN7+/l1w0y2JH7mkVeq3TPMG7BOXQIfj89GTf9mFsBRCozsyJaMZBZuGuIkpwiINz9ELgPkrh79oslLwfpzdarnRagzb05kxVhPi6kZycyhP9Jh8CpN0E4PSPmchNxlhkcWw4gut6QM0anfjtbUhXtmGqD6SsHGSyP+0nF9x/7sPox9tpWTRoKVN/Ghjhyktj8Ja9lsmP/ygdEJtqGmhXnJqhFw6H+r2+QnQPKpnDq2CGS6kF6U9wQtpcnbCZ3rHSipYDbIpMUHPOSv+I1hwoPXF78lVHlxjCoim8zKyUF54MaiFWrsKM3gFVOm2paQCFAjRDQlxvmH+Q5USirP9kyRbHB7tyxR+95wQogCUmfP2xHGHog+g+wbl4i7SxE9MnPPge24bwZ3v7s89AycKWZKzBxdYWwBLZVZjfy9Od6m4R0yaMpMpH1o5ktBjdrj9atisVrfsndCD","uniqueId":2}},{"type":"update","ssrComponentId":2,"marker":{"type":"server","prerenderId":"5d8865115a854f97ba1551e205af3344","key":{"locationHash":"E882B23BD3275791DD7A03C9B8AE3DB25E4F6F222E1664F3B5B5F1628D2C3A6A:23","formattedComponentKey":""},"sequence":1,"descriptor":"CfDJ8Ncw+jsDXk5DhFPO94NF5wDB0ubUPHJ7t+aIajCJsooRohstTXGQJg4kQHpWl77o4bEJhJmynX1tdO9nSGAoxrBgV6Xr8NaSWUlyNrcrdumBbZezMYE0nV0w76ffCpfG8gcFDX3ACq2/qNeypcgDB+CowcwKrHlQUGw+dsWAZKTyZIM19ytl2wip3Zo6q3N6OC5rbQhY4zfWmV03SwATxKKFXDU0Kw0kRtiPRO9v6a0noCV2w3kolWntkr8YztgddCEAdWx1vZxXm++j0TgzMnqoJf9JftLEoflysZENwXhxVdm87G4EqjKQK1G1KzdBcOEn/zhP3OhEhAwyP6J5K0RuNusxV4247c0dGTdKXQC6fR8PYcQbxVWMmL5R1RYMCXpk6hvcOrCDcZy9yYiK09vOgLahlj2wAIJ1S7YjS1pBclKX61bUkTRB9vy9PUGZUnxmbF+Fs3IpZBJSV7bNHpCpRtINvoZkuYYtG4K5+e5i+72fWcpqVayIcpyS2VUE/od7DIFJ8zn+1a6I7ZAoMuOmMZ6TlXd3qwCEsoBYrfEE0BC38Llfr4OtrU31EJWjcERp8SwA4SAHRqvwnpYNP4bZnwPsSTZxEZJMhPiWxRCY","uniqueId":3}}]},  ], StreamIds: [  ] }.
+2025-06-27 18:19:52.152 +02:00 [DBG] Update root components started.
+2025-06-27 18:19:52.153 +02:00 [DBG] Update root components succeeded.
+2025-06-27 18:19:54.252 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/downloads/rechnung - null null
+2025-06-27 18:19:54.252 +02:00 [DBG] The request path /api/downloads/rechnung does not match a supported file type
+2025-06-27 18:19:54.253 +02:00 [DBG] 1 candidate(s) found for the request path '/api/downloads/rechnung'
+2025-06-27 18:19:54.254 +02:00 [DBG] Endpoint 'ManagementWeb.Controller.DownloadController.DownloadBill (ManagementWeb)' with route pattern 'api/downloads/rechnung' is valid for the request path '/api/downloads/rechnung'
+2025-06-27 18:19:54.254 +02:00 [DBG] Request matched endpoint 'ManagementWeb.Controller.DownloadController.DownloadBill (ManagementWeb)'
+2025-06-27 18:19:54.254 +02:00 [INF] Executing endpoint 'ManagementWeb.Controller.DownloadController.DownloadBill (ManagementWeb)'
+2025-06-27 18:19:54.267 +02:00 [INF] Route matched with {action = "DownloadBill", controller = "Download"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DownloadBill() on controller ManagementWeb.Controller.DownloadController (ManagementWeb).
+2025-06-27 18:19:54.268 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-27 18:19:54.268 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-27 18:19:54.269 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-27 18:19:54.269 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-27 18:19:54.269 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-27 18:19:54.270 +02:00 [DBG] Executing controller factory for controller ManagementWeb.Controller.DownloadController (ManagementWeb)
+2025-06-27 18:19:54.346 +02:00 [DBG] Executed controller factory for controller ManagementWeb.Controller.DownloadController (ManagementWeb)
+2025-06-27 18:19:54.855 +02:00 [INF] Executing FileContentResult, sending file with download name 'Abrechnung_27.06.2025.pdf' ...
+2025-06-27 18:19:54.857 +02:00 [DBG] The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'.
+2025-06-27 18:19:54.865 +02:00 [INF] Executed action ManagementWeb.Controller.DownloadController.DownloadBill (ManagementWeb) in 593.5935ms
+2025-06-27 18:19:54.865 +02:00 [INF] Executed endpoint 'ManagementWeb.Controller.DownloadController.DownloadBill (ManagementWeb)'
+2025-06-27 18:19:54.865 +02:00 [DBG] Connection id "0HNDLIPNOI109" completed keep alive response.
+2025-06-27 18:19:54.865 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/downloads/rechnung - 200 65318 application/pdf 613.2518ms
+2025-06-27 18:22:48.778 +02:00 [DBG] Connection id "0HNDLIPNOI10D" received FIN.
+2025-06-27 18:22:48.779 +02:00 [DBG] Waiting for the application to finish sending data.
+2025-06-27 18:22:48.788 +02:00 [DBG] Connection id "0HNDLIPNOI10D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-27 18:22:48.790 +02:00 [DBG] Connection id "0HNDLIPNOI10D" disconnecting.
+2025-06-27 18:22:48.792 +02:00 [DBG] Socket closed.
+2025-06-27 18:22:48.817 +02:00 [DBG] Attempting to disconnect circuit with id OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew from connection j2tomJrivFY3U_Cwk03mRg.
+2025-06-27 18:22:48.820 +02:00 [DBG] Circuit with id OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew is disconnected.
+2025-06-27 18:22:48.820 +02:00 [DBG] Circuit id 'OR3ebgIxHAJnDx661A1ulb3FyFypreai5Wwz6ZVCJew' disconnected from connection 'j2tomJrivFY3U_Cwk03mRg'.
+2025-06-27 18:22:48.820 +02:00 [DBG] OnConnectedAsync ending.
+2025-06-27 18:22:48.822 +02:00 [DBG] Removing connection -OaT88GbUCFt0R8d4NVqLg from the list of connections.
+2025-06-27 18:22:48.822 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-27 18:22:48.822 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_blazor?id=-OaT88GbUCFt0R8d4NVqLg - 101 null null 180125.9016ms
+2025-06-27 18:22:48.823 +02:00 [DBG] Connection id "0HNDLIPNOI10D" stopped.
+2025-06-27 18:22:48.958 +02:00 [DBG] Connection id "0HNDLIPNOI109" received FIN.
+2025-06-27 18:22:48.958 +02:00 [DBG] Connection id "0HNDLIPNOI10B" received FIN.
+2025-06-27 18:22:48.958 +02:00 [DBG] Connection id "0HNDLIPNOI108" received FIN.
+2025-06-27 18:22:48.958 +02:00 [DBG] Connection id "0HNDLIPNOI10C" received FIN.
+2025-06-27 18:22:48.958 +02:00 [DBG] Connection id "0HNDLIPNOI10A" received FIN.
+2025-06-27 18:22:48.959 +02:00 [DBG] Connection id "0HNDLIPNOI108" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-27 18:22:48.959 +02:00 [DBG] Connection id "0HNDLIPNOI109" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-27 18:22:48.959 +02:00 [DBG] Connection id "0HNDLIPNOI10B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-27 18:22:48.959 +02:00 [DBG] Connection id "0HNDLIPNOI108" disconnecting.
+2025-06-27 18:22:48.960 +02:00 [DBG] Connection id "0HNDLIPNOI10C" disconnecting.
+2025-06-27 18:22:48.960 +02:00 [DBG] Connection id "0HNDLIPNOI10C" stopped.
+2025-06-27 18:22:48.960 +02:00 [DBG] Connection id "0HNDLIPNOI108" stopped.
+2025-06-27 18:22:48.960 +02:00 [DBG] Connection id "0HNDLIPNOI109" disconnecting.
+2025-06-27 18:22:48.960 +02:00 [DBG] Connection id "0HNDLIPNOI10A" disconnecting.
+2025-06-27 18:22:48.960 +02:00 [DBG] Connection id "0HNDLIPNOI10A" stopped.
+2025-06-27 18:22:48.962 +02:00 [DBG] Connection id "0HNDLIPNOI109" stopped.
+2025-06-27 18:22:48.962 +02:00 [DBG] Connection id "0HNDLIPNOI10B" disconnecting.
+2025-06-27 18:22:48.962 +02:00 [DBG] Connection id "0HNDLIPNOI10C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-27 18:22:48.963 +02:00 [DBG] Connection id "0HNDLIPNOI10B" stopped.
+2025-06-27 18:22:48.963 +02:00 [DBG] Connection id "0HNDLIPNOI10A" sending FIN because: "The Socket transport's send loop completed gracefully."

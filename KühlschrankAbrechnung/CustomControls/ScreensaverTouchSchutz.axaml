@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KühlschrankAbrechnung.ScreensaverTouchSchutz"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch">
+  <Grid Background="rgba(30,30,30,0.3)"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+      <TextBlock HorizontalAlignment="Center" Text="Bildschrim gesperrt!" FontWeight="Bold" FontSize="26" Foreground="Black"/>
+      <TextBlock HorizontalAlignment="Center" Text="Zum Entsperren tippen!" FontWeight="Bold" FontSize="20" Foreground="Black"/>
+    </StackPanel>
+    </Grid>
+</UserControl>

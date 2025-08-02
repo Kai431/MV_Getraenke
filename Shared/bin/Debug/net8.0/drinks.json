@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Limo",
+    "Price": 1.5,
+    "Content": 0.33
+  },
+  {
+    "Name": "Bier Kl.",
+    "Price": 1.5,
+    "Content": 0.33
+  },
+  {
+    "Name": "Bier Gr.",
+    "Price": 2.0,
+    "Content": 0.5
+  },
+  {
+    "Name": "Spritzer",
+    "Price": 2.5,
+    "Content": 0.5
+  }
+]

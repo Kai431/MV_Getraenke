@@ -1,0 +1,102 @@
+﻿@page "/drinks"
+@inject DrinksViewModel VM
+@rendermode InteractiveServer
+
+<style>
+    .image {
+        height: 1rem;
+        margin: auto;
+        border: 1px solid var(--neutral-layer-3);
+    }
+
+    .centered-column {
+        white-space: pre-wrap;
+        text-align: center;
+    }
+
+    .selected-row {
+        background-color: rgba(0, 120, 215, 0.1); /* Leichtes Blau */
+        border-radius: 8px;
+    }
+
+    .popup {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        height: 60px;
+        margin-top: 17px; /* To compensate for parent block's padding */
+        color: #fff;
+        background: #f00;
+        z-index: 9999999;
+        overflow: visible !important;
+    }
+
+    .item:hover .popup {
+        display: block;
+    }
+
+    fluent-card {
+        contain: none;
+        content-visibility: visible;
+    }
+
+    .blocking-div {
+        pointer-events: none;
+    }
+</style>
+
+<FluentStack Orientation="Orientation.Horizontal">
+    <div style="height: 800px; overflow-y: scroll; margin-top:20px;">
+        <FluentDataGrid Items="VM.Drinks.AsQueryable()" ShowHover="true" TGridItem="DrinkDB" OnRowClick="@((rowItem) => VM.SetSelectedDrink(rowItem.Item))">
+            <TemplateColumn Title="" Width="60px" Style="height:70px">
+                <div class="flex items-center">
+                    <img height="50" width="50" src="@context.ImagePathForHTML" />
+                </div>
+            </TemplateColumn>
+            <TemplateColumn Title="Name" Width="100px" Style="height:70px;">
+                <FluentLabel>@context.Name</FluentLabel>
+            </TemplateColumn>
+            <TemplateColumn Title="Preis" Width="100px" Class="centered-column" Style="height:70px">
+                <FluentLabel>@context.Price.ToString("C")</FluentLabel>
+            </TemplateColumn>
+            <TemplateColumn Title="Inhalt" Width="100px" Class="centered-column" Style="height:70px">
+                <FluentLabel>@(context.Content.ToString("F2") + " L")</FluentLabel>
+            </TemplateColumn>
+            <TemplateColumn Width="200px" Title="@("Anzahl im Lager")" Class="centered-column" Style="height:70px">
+                <FluentLabel>@(context.StockCount.ToString())</FluentLabel>
+            </TemplateColumn>
+            <TemplateColumn Title="Auswählbar" Width="140px" Class="centered-column" Style="height:70px;" TGridItem="DrinkDB">
+                <FluentCheckbox @bind-Value="context.IsListed" @onchange="@(() => VM.StateChanged(context))" />
+            </TemplateColumn>
+        </FluentDataGrid>
+    </div>
+    <FluentStack Orientation="Orientation.Vertical" Style="width:350px">
+
+        <FluentCard style="padding:16px; color:#888;">
+            <FluentLabel Style="font-weight:500; color: #2f6cc3; font-size:20px; margin-bottom:10px">Getränk ändern</FluentLabel>
+            <FluentTextField @bind-Value="@VM.SelectedDrink.Name" Style="width:100%" ReadOnly="true" Label="Name:"></FluentTextField>
+            <FluentNumberField @bind-Value="@VM.SelectedDrink.Content" Style="width:100%" Label="Inhalt [L]:"></FluentNumberField>
+            <FluentNumberField @bind-Value="@VM.SelectedDrink.Price" Style="width:100%" Label="Preis [€]:" Step="0.5"></FluentNumberField>
+            <FluentButton Appearance="Appearance.Accent" Disabled="@VM.SaveButtonDisabled" onclick="@VM.SaveDrink" Style="width:100%">Speichern</FluentButton>
+        </FluentCard>
+        <FluentCard Style="padding:16px; color:#888">
+            <FluentLabel Style="font-weight:500; color: #2f6cc3; font-size:20px; margin-bottom:10px">Lager ändern</FluentLabel>
+            <FluentSelect Placeholder="Getränk auswhälen" OptionText="d => d.Name" @bind-SelectedOption="@VM.SelectedDrink" TOption="DrinkDB" Items="@VM.Drinks" />
+            <FluentNumberField Min="1" TValue="int" Step="1" Label="Anzahl Flaschen:" @bind-Value="@VM.txtStockCount"/>
+            <FluentStack Style="width: stretch;align-items:stretch; justify-content:center; margin-top: 10px;" HorizontalGap="10">
+                <FluentButton Style="width: 100px" OnClick="@VM.AddStock">Hinzufügen</FluentButton>
+                <FluentButton Style="width: 100px" OnClick="@VM.SubStock" Color="White" BackgroundColor="#D13438">Entfernen</FluentButton>
+                <FluentButton Appearance="Appearance.Accent" OnClick="@VM.SetStock" Style="width: 100px">Setzen</FluentButton>
+            </FluentStack>
+        </FluentCard>
+    </FluentStack>
+</FluentStack>
+
+@code {
+    protected override void OnInitialized()
+    {
+        VM.Initialize();
+    }
+}

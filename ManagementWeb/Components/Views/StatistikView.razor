@@ -1,0 +1,252 @@
+﻿@page "/statistik"
+@inject StatistikViewModel VM
+@using ApexCharts
+@rendermode InteractiveServer
+
+<FluentStack HorizontalGap="24" Style="margin-bottom:10px">
+
+    <!-- Dashboard -->
+    <FluentCard Style="padding:16px; border:1px solid #CCC; border-radius:12px;">
+        <FluentLabel Style="font-size:24px; font-weight:bold; color:#2C3E50; margin-bottom:20px">📊 Dashboard</FluentLabel>
+        <FluentGrid Spacing="1">
+            <FluentGridItem xs="12" sm="6">
+                <FluentCard Style="background:#E3F2FD; padding:12px; border-radius:12px;">
+                    <FluentLabel Style="font-weight:bold; color:#1565C0;">Kassastand</FluentLabel>
+                    <FluentLabel Style="font-size:16px; font-weight:600; color:#0D47A1;">@VM.KassaStand.ToString("F2") €</FluentLabel>
+                </FluentCard>
+            </FluentGridItem>
+
+            <FluentGridItem xs="12" sm="6">
+                <FluentCard Style="background:#E8F5E9; padding:12px; border-radius:12px;">
+                    <FluentLabel Style="font-weight:bold; color:#2E7D32;">Einnahmen</FluentLabel>
+                    <FluentLabel Style="font-size:16px; font-weight:600; color:#1B5E20;">@VM.GesamtEinnahmen.ToString("F2") €</FluentLabel>
+                </FluentCard>
+            </FluentGridItem>
+
+            <FluentGridItem xs="12" sm="6">
+                <FluentCard Style="background:#FFEBEE; padding:12px; border-radius:12px;">
+                    <FluentLabel Style="font-weight:bold; color:#D32F2F;">Ausgaben</FluentLabel>
+                    <FluentLabel Style="font-size:16px; font-weight:600; color:#D32F2F;">@VM.GesamtAusgaben.ToString("F2") €</FluentLabel>
+                </FluentCard>
+            </FluentGridItem>
+
+            <FluentGridItem xs="12" sm="6">
+                <FluentCard Style="background:#E1F5FE; padding:12px; border-radius:12px;">
+                    <FluentLabel Style="font-weight:bold; color:#0288D1;">Getränke (L)</FluentLabel>
+                    <FluentLabel Style="font-size:16px; font-weight:600; color:#01579B;">@VM.GesamtLiter.ToString("F2") L</FluentLabel>
+                </FluentCard>
+            </FluentGridItem>
+
+        </FluentGrid>
+    </FluentCard>
+
+    <!-- Top Trinker -->
+    <FluentCard Style="padding:16px; border:1px solid #CCC; border-radius:12px;">
+        <FluentLabel Style="font-size:22px; font-weight:bold; color:#2C3E50; margin-bottom:20px">🥇 Top Trinker</FluentLabel>
+        @foreach (var trinker in VM.TopTrinker)
+        {
+            <FluentCard Style="background:#F0F0F0; border:1px solid #DDD; border-radius:8px; padding:10px; margin-top:7px;">
+                <FluentStack Orientation="Microsoft.FluentUI.AspNetCore.Components.Orientation.Horizontal" Spacing="8">
+                    <FluentLabel Style="font-size:18px;">👤</FluentLabel>
+                    <FluentLabel Style="font-size:16px;">@trinker</FluentLabel>
+                </FluentStack>
+            </FluentCard>
+        }
+    </FluentCard>
+
+    <!-- Top Getränke -->
+    <FluentCard Style="padding:16px; border:1px solid #CCC; border-radius:12px;">
+        <FluentLabel Style="font-size:22px; font-weight:bold; color:#2C3E50; margin-bottom:20px">🍻 Beliebteste Getränke</FluentLabel>
+        @foreach (var getr in VM.TopGetränke)
+        {
+            <FluentCard Style="background:#F9F9F9; border:1px solid #DDD; border-radius:8px; padding:10px; margin-top:7px;">
+                <FluentStack Orientation="Microsoft.FluentUI.AspNetCore.Components.Orientation.Horizontal" Spacing="8">
+                    <FluentLabel Style="font-size:18px;">🍺</FluentLabel>
+                    <FluentLabel Style="font-size:16px;">@getr</FluentLabel>
+                </FluentStack>
+            </FluentCard>
+        }
+    </FluentCard>
+</FluentStack>
+
+<!-- Jahresstatistik mit Diagrammen -->
+<FluentCard Style="padding:16px; border:1px solid #CCC; border-radius:12px;">
+    <FluentStack Orientation="Microsoft.FluentUI.AspNetCore.Components.Orientation.Vertical" HorizontalGap="20">
+        <FluentLabel Style="font-size:24px; font-weight:bold; color:#2C3E50;">📈 Jahresübersicht</FluentLabel>
+
+        <ApexChart Height="500" TItem="DrinkEntryDB"
+                   Title="Getrunkene Liter pro Monat"
+                   Width="1200"
+                   Options="optionsDrinks">
+
+            @foreach (var drink in VM.Drinks)
+            {
+                if (drink.Name == "OnlyForChart")
+                    continue;
+
+                <ApexPointSeries TItem="DrinkEntryDB"
+                                 Items="@VM.DrinkEntries"
+                                 Name="@drink.Name"
+                                 XValue="@(e => DateTime.Parse(e.Date).ToString("MMM"))"
+                                 YAggregate="@(e => (decimal)e.Where(e => e.Name == drink.Name).Sum(e => e.Content))"
+                                 SeriesType="SeriesType.Bar"
+                                 ShowDataLabels 
+                                 Color="@Colors[VM.Drinks.IndexOf(drink)]"/>
+            }
+        </ApexChart>
+
+        <ApexChart Height="500" TItem="TransactionDB"
+                   Title="Einnahmen & Ausgaben pro Monat"
+                   Width="1200"
+                   Options="optionsTrans">
+
+            <ApexPointSeries TItem="TransactionDB"
+                             Items="@VM.KassaTransactions"
+                             Name="Einnahmen"
+                             XValue="@(e => DateTime.Parse(e.Date).ToString("MMM"))"
+                             YAggregate="@(e => (decimal)e.Where(e => e.TransactionType == TransactionType.Einnahme).Sum(e => e.Amount))"
+                             SeriesType="SeriesType.Bar"
+                             Color="#1CA635" />
+
+            <ApexPointSeries TItem="TransactionDB"
+                             Items="@VM.KassaTransactions"
+                             Name="Ausgaben"
+                             XValue="@(e => DateTime.Parse(e.Date).ToString("MMM"))"
+                             YAggregate="@(e => (decimal)e.Where(e => e.TransactionType == TransactionType.Ausgabe).Sum(e => e.Amount))"
+                             SeriesType="SeriesType.Bar"
+                             Color="#E51C15" />
+        </ApexChart>
+    </FluentStack>
+</FluentCard>
+
+@code {
+    private ApexChartOptions<TransactionDB> optionsTrans;
+    private ApexChartOptions<DrinkEntryDB> optionsDrinks;
+
+    private List<string> Colors = new List<string>
+    {
+        "#1E88E5", // Blau
+        "#43A047", // Grün
+        "#FB8C00", // Orange
+        "#E53935", // Rot
+        "#8E24AA", // Lila
+        "#6D4C41", // Braun
+        "#2E7D32", // Dunkelgrün
+        "#00ACC1", // Türkis
+        "#FDD835", // Goldgelb
+        "#D81B60"  // Pink
+    };
+
+    protected override void OnInitialized()
+    {
+        optionsTrans = new ApexChartOptions<TransactionDB>
+        {
+            Title = new Title
+            {
+                Style = new TitleStyle
+                {
+                    FontSize = "20px",
+                },
+            },
+
+            Xaxis = new XAxis
+            {
+                Title = new AxisTitle
+                {
+                    Text = "Monate",
+                    Style = new AxisTitleStyle
+                    {
+                        FontSize = "16px",
+                    }
+                },
+                Labels = new XAxisLabels
+                {
+                    Style = new AxisLabelStyle
+                    {
+                        FontSize = "14px"
+                    }
+                }
+            },
+            Yaxis = new List<YAxis> { new YAxis
+                {
+                     Title = new AxisTitle
+                    {
+                        Text = "Betrag",
+                        Style = new AxisTitleStyle {
+                            FontSize = "16px"
+                        }
+                    },
+                    Labels = new YAxisLabels {
+                        Formatter = @" function (value) {
+                                          return value.toFixed(2) + ' €';
+                                    }",
+                        Style = new AxisLabelStyle {
+                            FontSize = "14px"
+                        } }
+                }},
+        };
+
+
+        optionsDrinks = new ApexChartOptions<DrinkEntryDB>
+        {
+            Title = new Title
+            {
+                Style = new TitleStyle
+                {
+                    FontSize = "20px",
+                },
+            },
+
+            Chart = new Chart
+            {
+                Stacked = true,
+                StackType = StackType.Normal,
+            },
+
+            Xaxis = new XAxis
+            {
+                Title = new AxisTitle
+                {
+                    Text = "Monate",
+                    Style = new AxisTitleStyle
+                    {
+                        FontSize = "16px"
+                    }
+                },
+                Labels = new XAxisLabels
+                {
+                    Style = new AxisLabelStyle
+                    {
+                        FontSize = "14px"
+                    }
+                }
+            },
+            Yaxis = new List<YAxis> { new YAxis
+                {
+                    Title = new AxisTitle
+                    {
+                        Text = "Liter",
+                        Style = new AxisTitleStyle {
+                            FontSize = "16px"
+                        }
+                    },
+                    Labels = new YAxisLabels
+                    {
+                        Formatter = @" function (value) {
+                                          return value.toFixed(2) + ' L';
+                                    }",
+                        Style = new AxisLabelStyle {
+                            FontSize = "14px"
+                        }
+                    }
+                }},
+            DataLabels = new DataLabels
+            {
+                Formatter = @" function (value) {
+                                          return value.toFixed(2);
+                                    }",
+            }
+
+        };
+    }
+}

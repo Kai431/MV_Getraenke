@@ -1,0 +1,90 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+        xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+        x:Class="KühlschrankAbrechnung.SatzView"
+        x:DataType="vm:SatzViewModel"
+        Background="White">
+  <Grid RowDefinitions="Auto,*" Background="#F5F5F5">
+
+    <!-- HEADER -->
+    <Border Background="#2196F3" Padding="20,0" Height="60" BorderBrush="#1976D2" BorderThickness="0,0,0,2">
+      <DockPanel VerticalAlignment="Center">
+        <TextBlock Text="{Binding ChosenSatz}"
+                   VerticalAlignment="Center"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   DockPanel.Dock="Left"/>
+
+        <Button Content="Home"
+                FontSize="22"
+                FontWeight="Bold"
+                Foreground="White"
+                Padding="10,4"
+                BorderBrush="White"
+                BorderThickness="1.5"
+                CornerRadius="8"
+                VerticalContentAlignment="Center"
+                Background="Transparent"
+                HorizontalAlignment="Right"
+                HorizontalContentAlignment="Center"
+                Command="{Binding GoToHomeViewCommand}"
+                DockPanel.Dock="Right"/>
+      </DockPanel>
+    </Border>
+
+    <!-- INHALT -->
+    <ScrollViewer Grid.Row="1" Margin="12,12,12,12" AllowAutoHide="False">
+
+      <!-- STYLES -->
+      <ScrollViewer.Styles>
+        <Style Selector="ScrollBar">
+          <Setter Property="Width" Value="6"/>
+          <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style Selector="ScrollBar /template/Thumb">
+          <Setter Property="Background" Value="#90CAF9"/>
+          <!-- Soft Blue -->
+          <Setter Property="CornerRadius" Value="3"/>
+          <Setter Property="MinHeight" Value="30"/>
+        </Style>
+      </ScrollViewer.Styles>
+
+      <!-- MUSIKERLISTE -->
+      <ItemsControl ItemsSource="{Binding Musicians}">
+        <ItemsControl.ItemsPanel>
+          <ItemsPanelTemplate>
+            <StackPanel Spacing="8"/>
+          </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+
+        <ItemsControl.ItemTemplate>
+          <DataTemplate>
+            <Button Height="80"
+                    BorderBrush="#2196F3"
+                    BorderThickness="2"
+                    Background="White"
+                    Foreground="Black"
+                    CornerRadius="10"
+                    Padding="12"
+                    Margin="0,0,8,0"
+                    HorizontalAlignment="Stretch"
+                    FontSize="20"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontWeight="SemiBold"
+                    Content="{Binding Name}"
+                    Command="{Binding $parent[ItemsControl].DataContext.GoToMusicianViewCommand}"
+                    CommandParameter="{Binding .}"/>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </ScrollViewer>
+  </Grid>
+
+</UserControl>

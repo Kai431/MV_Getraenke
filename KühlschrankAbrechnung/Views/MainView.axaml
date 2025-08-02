@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+        xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+        x:Class="KühlschrankAbrechnung.MainView"
+        xmlns:controls="clr-namespace:KühlschrankAbrechnung" 
+        Title="Kühlschranknutzung" Width="480" Height="800">
+
+  <Window.DataContext>
+    <vm:MainViewModel />
+  </Window.DataContext>
+  <Grid>
+    <ContentControl 
+      x:DataType="vm:MainViewModel" 
+      Content="{Binding CurrentView}" />
+    
+    <controls:ScreensaverTouchSchutz HorizontalAlignment="Stretch"
+                                     VerticalAlignment="Stretch"
+                                     IsVisible="{Binding ShowLockScreen}"
+                                     ZIndex="200"/>
+  </Grid>
+</Window>

@@ -1,0 +1,58 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <Border Padding="20">
+      <!-- Add Controls for Previewer Here -->
+    </Border>
+  </Design.PreviewWith>
+
+  <Style Selector=":is(Button).CustomButton">
+    <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="CornerRadius" Value="10"/>
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="VerticalAlignment" Value="Stretch"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    <Setter Property="Margin" Value="10"/>
+    <Setter Property="FontSize" Value="18"/>
+  </Style>
+  <Style Selector="Button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="{DynamicResource HoverColor}"/>
+    <Setter Property="Foreground" Value="White"/>
+  </Style>
+
+  <Style Selector="Button:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="{DynamicResource HoverColor}"/>
+    <Setter Property="Foreground" Value="White"/>
+  </Style>
+
+  <Style Selector="DataGridColumnHeader">
+    <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="FontSize" Value="16"/>
+    <Setter Property="BorderBrush" Value="Gray"/>
+    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+  </Style>
+
+  <!-- Style für DataGrid-Zeilen -->
+  <Style Selector="DataGridRow">
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Background" Value="White"/>
+  </Style>
+
+  <!-- Style für DataGrid-Zellen -->
+  <Style Selector="DataGridCell">
+    <Setter Property="BorderBrush" Value="Black"/>
+    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+    <!-- Nur rechts + unten -->
+    <Setter Property="Padding" Value="4"/>
+    <Setter Property="Background" Value="White"/>
+  </Style>
+
+  <!-- Auswahl deaktivieren -->
+  <Style Selector="DataGridRow:selected">
+    <Setter Property="Background" Value="White"/>
+  </Style>
+</Styles>

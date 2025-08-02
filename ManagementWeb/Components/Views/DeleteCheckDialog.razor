@@ -1,0 +1,38 @@
+﻿@implements IDialogContentComponent<Musician>
+
+@* Header *@
+<FluentDialogHeader ShowDismiss="true">
+    <FluentStack VerticalAlignment="VerticalAlignment.Center">
+        <FluentIcon Value="@(new Icons.Regular.Size24.WindowApps())" />
+        <FluentLabel Typo="Typography.PaneHeader">
+            @Content.Name Löschen?
+        </FluentLabel>
+    </FluentStack>
+</FluentDialogHeader>
+
+<FluentDialogBody>
+    <p>@Content.Name wirklich löschen?</p>
+    <p>@Content.Name hat noch @Content.outBalance € offen.</p>
+</FluentDialogBody>
+
+@* Footer *@
+<FluentDialogFooter>
+    <FluentButton Appearance="Appearance.Accent" OnClick="@DeleteAsync">Löschen</FluentButton>
+    <FluentButton Appearance="Appearance.Neutral" OnClick="@CancelAsync">Abbrechen</FluentButton>
+</FluentDialogFooter>
+
+@code {
+    [Parameter] public Musician Content { get; set; } = default!;
+    [CascadingParameter]
+    public FluentDialog Dialog { get; set; } = default!;
+
+    private async Task DeleteAsync()
+    {
+        await Dialog.CloseAsync();
+    }
+
+    private async Task CancelAsync()
+    {
+        await Dialog.CancelAsync();
+    }
+}

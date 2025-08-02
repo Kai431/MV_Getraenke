@@ -1,0 +1,62 @@
+2025-08-01 18:33:38.668 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-08-01 18:33:38.711 +02:00 [INF] User profile is available. Using 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-01 18:33:38.722 +02:00 [DBG] Hosting starting
+2025-08-01 18:33:38.729 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-3bfa30d7-5e03-434e-8453-cef78345e700.xml'.
+2025-08-01 18:33:38.730 +02:00 [DBG] Reading data from file 'C:\Users\KaiTinkhauser\AppData\Local\ASP.NET\DataProtection-Keys\key-a61c95be-0c2a-4f87-999c-bb2ae8ee9a91.xml'.
+2025-08-01 18:33:38.731 +02:00 [DBG] Found key {3bfa30d7-5e03-434e-8453-cef78345e700}.
+2025-08-01 18:33:38.732 +02:00 [DBG] Found key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91}.
+2025-08-01 18:33:38.735 +02:00 [DBG] Considering key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} with expiration date 2025-10-05 13:15:10Z as default key.
+2025-08-01 18:33:38.736 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-08-01 18:33:38.737 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-08-01 18:33:38.738 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-08-01 18:33:38.740 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-08-01 18:33:38.740 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-08-01 18:33:38.741 +02:00 [DBG] Using key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} as the default key.
+2025-08-01 18:33:38.741 +02:00 [DBG] Key ring with default key {a61c95be-0c2a-4f87-999c-bb2ae8ee9a91} was loaded during application startup.
+2025-08-01 18:33:38.752 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-08-01 18:33:38.752 +02:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-08-01 18:33:38.798 +02:00 [INF] Now listening on: http://0.0.0.0:5000
+2025-08-01 18:33:38.798 +02:00 [DBG] Loaded hosting startup assembly ManagementWeb
+2025-08-01 18:33:38.799 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-01 18:33:38.799 +02:00 [INF] Hosting environment: Production
+2025-08-01 18:33:38.799 +02:00 [INF] Content root path: D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\bin\Debug\net8.0\
+2025-08-01 18:33:38.799 +02:00 [DBG] Hosting started
+2025-08-01 18:33:38.799 +02:00 [INF] Webserver gestartet
+2025-08-01 18:33:38.917 +02:00 [DBG] Connection id "0HNEH34LMI0EJ" accepted.
+2025-08-01 18:33:38.917 +02:00 [DBG] Connection id "0HNEH34LMI0EJ" started.
+2025-08-01 18:33:39.124 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-08-01 18:33:39.126 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-08-01 18:33:39.128 +02:00 [DBG] The request is insecure. Skipping HSTS header.
+2025-08-01 18:33:39.129 +02:00 [DBG] POST requests are not supported
+2025-08-01 18:33:39.174 +02:00 [DBG] Connection id "0HNEH34LMI0EK" accepted.
+2025-08-01 18:33:39.174 +02:00 [DBG] Connection id "0HNEH34LMI0EK" started.
+2025-08-01 18:33:39.348 +02:00 [DBG] 1 candidate(s) found for the request path '/_blazor/negotiate'
+2025-08-01 18:33:39.348 +02:00 [DBG] Request matched endpoint 'null'
+2025-08-01 18:33:39.349 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-08-01 18:33:39.352 +02:00 [DBG] New connection Y8KfYL9EMN1Xw-oQ-BEVfw created.
+2025-08-01 18:33:39.355 +02:00 [DBG] Sending negotiation response.
+2025-08-01 18:33:39.357 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-08-01 18:33:39.357 +02:00 [DBG] Connection id "0HNEH34LMI0EJ" completed keep alive response.
+2025-08-01 18:33:39.357 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 234.3091ms
+2025-08-01 18:33:39.674 +02:00 [DBG] Connection id "0HNEH34LMI0EL" accepted.
+2025-08-01 18:33:39.674 +02:00 [DBG] Connection id "0HNEH34LMI0EL" started.
+2025-08-01 18:33:39.676 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_blazor?id=Id4GGjHh9DYamm5VpGOHEg - null null
+2025-08-01 18:33:39.677 +02:00 [DBG] The request is insecure. Skipping HSTS header.
+2025-08-01 18:33:39.677 +02:00 [DBG] The request path /_blazor does not match a supported file type
+2025-08-01 18:33:39.679 +02:00 [DBG] 1 candidate(s) found for the request path '/_blazor'
+2025-08-01 18:33:39.679 +02:00 [DBG] Request matched endpoint 'null'
+2025-08-01 18:33:39.679 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-08-01 18:33:39.681 +02:00 [DBG] Establishing new connection.
+2025-08-01 18:33:39.683 +02:00 [DBG] OnConnectedAsync started.
+2025-08-01 18:33:39.684 +02:00 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-08-01 18:33:39.689 +02:00 [DBG] Found protocol implementation for requested protocol: blazorpack.
+2025-08-01 18:33:39.690 +02:00 [DBG] Completed connection handshake. Using HubProtocol 'blazorpack'.
+2025-08-01 18:33:40.061 +02:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "0", Target: "ConnectCircuit", Arguments: [ CfDJ8L6VHKYqDIdPmZy7KujumpHcxGCT_VPfu_5lagWd0IM33pw03_EIzSuzpgzLhoSVkvYMfzcKi27OLpxP18gbJP-MSIOjmVUBukYs3zyntB9wbot3AGfuCStzoMA4_4_D_kOwusuuLhXC588JVePyDIRJloxX0_t4jPMN-iNsrUvRWAFBv-q2oSMC5OhWmD_Y7khZYJ8LixBL3f-R6haX6SM ], StreamIds: [  ] }.
+2025-08-01 18:33:40.068 +02:00 [DBG] Attempting to reconnect to Circuit with secret 5QWlXew5BN5G8jcuXTKNjlDA2C4STaJ15WwaUuJJu2o.
+2025-08-01 18:33:40.070 +02:00 [DBG] Failed to find a matching circuit for circuit secret 5QWlXew5BN5G8jcuXTKNjlDA2C4STaJ15WwaUuJJu2o.
+2025-08-01 18:35:50.425 +02:00 [DBG] Connection id "0HNEH34LMI0EK" disconnecting.
+2025-08-01 18:35:50.425 +02:00 [DBG] Connection id "0HNEH34LMI0EJ" disconnecting.
+2025-08-01 18:35:50.427 +02:00 [DBG] Connection id "0HNEH34LMI0EK" stopped.
+2025-08-01 18:35:50.427 +02:00 [DBG] Connection id "0HNEH34LMI0EJ" stopped.
+2025-08-01 18:35:50.429 +02:00 [DBG] Connection id "0HNEH34LMI0EK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-08-01 18:35:50.429 +02:00 [DBG] Connection id "0HNEH34LMI0EJ" sending FIN because: "The Socket transport's send loop completed gracefully."

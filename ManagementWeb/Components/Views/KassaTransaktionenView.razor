@@ -1,0 +1,150 @@
+﻿@page "/transactions"
+@inject KassaTransaktionenViewModel VM
+@rendermode InteractiveServer
+
+<style>
+    .popup {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 60px;
+    margin-top: 17px; /* To compensate for parent block's padding */
+    color: #fff;
+    background: #f00;
+    z-index: 9999999;
+    overflow: visible !important;
+    }
+
+    .item:hover .popup {
+    display: block;
+    }
+
+    fluent-card {
+    contain: none;
+    content-visibility: visible;
+    }
+</style>
+
+<h2 style="margin-bottom: 20px;">
+    <iconify-icon icon="mdi:swap-horizontal" width="28" style="margin-right:7px;"></iconify-icon>
+    Ein/Auszahlungen
+</h2>
+
+<FluentStack Orientation="Orientation.Horizontal">
+    <FluentNumberField Label="Zeige Daten für:" TValue="int" @bind-Value="VM.DataYear" Step="1" Min="2020" Max="@DateTime.Now.Year.ToString()"/>
+</FluentStack>
+<FluentStack Orientation="Orientation.Horizontal">
+    <div style="height: 750px; overflow-y: scroll; margin-top:20px; width:730px">
+        <FluentDataGrid Items="VM.Transactions" GridTemplateColumns="0.5fr 0.5fr 1.5fr 1fr" Style="width: 700px;">
+            <FluentDataGridRow>
+                <FluentDataGridCell @onclick="@(() => ToggleSort("Type"))">
+                    <strong>Typ @(GetSortIndicator("Type"))</strong>
+                </FluentDataGridCell>
+                <FluentDataGridCell @onclick="@(() => ToggleSort("Amount"))">
+                    <strong>Betrag @(GetSortIndicator("Amount"))</strong>
+                </FluentDataGridCell>
+                <FluentDataGridCell @onclick="@(() => ToggleSort("Description"))">
+                    <strong>Beschreibung @(GetSortIndicator("Description"))</strong>
+                </FluentDataGridCell>
+                <FluentDataGridCell @onclick="@(() => ToggleSort("Date"))">
+                    <strong>Datum @(GetSortIndicator("Date"))</strong>
+                </FluentDataGridCell>
+            </FluentDataGridRow>
+            @foreach (var item in SortedTransactions)
+            {
+                @if (item.TransactionType == TransactionType.Ausgabe)
+                {
+                    <FluentDataGridRow Item="@item" Style="background:#FFEBEE">
+                        <FluentDataGridCell>@item.TransactionType</FluentDataGridCell>
+                        <FluentDataGridCell>@item.Amount.ToString("C")</FluentDataGridCell>
+                        <FluentDataGridCell>@item.Description</FluentDataGridCell>
+                        <FluentDataGridCell>@item.Date</FluentDataGridCell>
+                    </FluentDataGridRow>
+                }
+                else
+                {
+                    <FluentDataGridRow Item="@item" Style="background:#E8F5E9">
+                        <FluentDataGridCell>@item.TransactionType</FluentDataGridCell>
+                        <FluentDataGridCell>@item.Amount.ToString("C")</FluentDataGridCell>
+                        <FluentDataGridCell>@item.Description</FluentDataGridCell>
+                        <FluentDataGridCell>@item.Date</FluentDataGridCell>
+                    </FluentDataGridRow>
+                }
+            }
+        </FluentDataGrid>
+    </div>
+
+<FluentStack Orientation="Orientation.Vertical" Width="300px" Style="margin-left:10px">
+    <FluentCard Style="background:#f3f3f3; padding:10px; width: 320px;" Height="320px">
+        <FluentRadioGroup Name="type" @bind-Value="VM.TransactionType" Label="Typ" Style="margin-bottom:10px">
+            <FluentRadio Checked="true" Value="TransactionType.Einnahme">Eingang</FluentRadio>
+            <FluentRadio Value="TransactionType.Ausgabe">Ausgang</FluentRadio>
+        </FluentRadioGroup>
+
+        <FluentNumberField Style="width:100%; margin-bottom:10px" Label="Betrag:" @bind-Value="VM.Amount" Min="0.0" Step="0.5" />
+
+        <FluentTextField Placeholder="Getränkekauf" Label="Beschreibung:" @bind-Value="VM.Description" Style="width:100%; margin-bottom:10px" />
+        <FluentDatePicker Style="width:100%;" Label="Datum:" @bind-Value="@VM.TransactionDate" />
+        <FluentButton Appearance="Appearance.Accent" Style="width:100%; margin-top:10px" OnClick="VM.SaveTransaction">Speichern</FluentButton>
+    </FluentCard>
+
+    <FluentGrid Style="width:100%; margin-left:10px; margin-top:10px">
+
+        @foreach (var card in VM.DashboardCards)
+        {
+            <FluentCard Height="75px" style=@($"padding:8px; background-color: {card.BackgroundColor}; border-color: {card.MainColor}; margin:5px")>
+                <div style="display:flex; align-items:center;">
+                    <div>
+                        <iconify-icon icon=@($"{card.Icon}") style=@($"font-size:28px; color:{card.MainColor}; margin-right:10px;") />
+                    </div>
+                    <div style=@($"font-weight:bold; color:{card.MainColor}; font-size:19px;")>@card.Title</div>
+                </div>
+                <FluentLabel style=@($"font-size:20px; color:{card.ValueColor};")>@card.Value</FluentLabel>
+            </FluentCard>
+        }
+
+    </FluentGrid>
+</FluentStack>
+
+</FluentStack>
+@code {
+    private string currentSortColumn = "Date";
+    private bool sortDescending = true;
+
+    protected override void OnInitialized()
+    {
+        VM.Initialize();
+    }
+    private IEnumerable<TransactionDB> SortedTransactions => currentSortColumn switch
+    {
+        "Type" => sortDescending
+            ? VM.Transactions.OrderByDescending(t => t.TransactionType)
+            : VM.Transactions.OrderBy(t => t.TransactionType),
+        "Amount" => sortDescending
+            ? VM.Transactions.OrderByDescending(t => t.Amount)
+            : VM.Transactions.OrderBy(t => t.Amount),
+        "Description" => sortDescending
+            ? VM.Transactions.OrderByDescending(t => t.Description)
+            : VM.Transactions.OrderBy(t => t.Description),
+        "Date" => sortDescending
+            ? VM.Transactions.OrderByDescending(t => t.Date)
+            : VM.Transactions.OrderBy(t => t.Date),
+        _ => VM.Transactions
+    };
+
+    private void ToggleSort(string column)
+    {
+        if (currentSortColumn == column)
+            sortDescending = !sortDescending;
+        else
+        {
+            currentSortColumn = column;
+            sortDescending = true;
+        }
+    }
+
+    private string GetSortIndicator(string column) =>
+        currentSortColumn == column ? (sortDescending ? "↓" : "↑") : "";
+}

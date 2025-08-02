@@ -1,0 +1,90 @@
+﻿<FluentStack Orientation="Orientation.Horizontal">
+    <div style="height: 800px; overflow-y: scroll; margin-top:20px; width:450px">
+        <!-- Tabelle -->
+        <FluentDataGrid TGridItem="DrinkEntryDB" Items="_DrinkHistory">
+            <TemplateColumn Title="Name" Style="height:50px">
+                <FluentLabel>@context.Name</FluentLabel>
+            </TemplateColumn>
+            <TemplateColumn Title="Datum" TGridItem="DrinkEntryDB" Style="height:50px">
+                <FluentLabel>@context.Date</FluentLabel>
+            </TemplateColumn>
+            <TemplateColumn Title="Löschen?" TGridItem="DrinkEntryDB" Style="height:50px">
+                <FluentButton BackgroundColor="#D13438" OnClick="()=>DeleteDrinkEntry(context)" Style="color:white; width:90px;">Löschen</FluentButton>
+            </TemplateColumn>
+        </FluentDataGrid>
+    </div>
+    <FluentCard Style="padding: 15px; width:fit-content; margin-left:5px">
+        <FluentStack Orientation="Orientation.Vertical" VerticalGap="16">
+
+            <!-- Header -->
+            <FluentStack>
+                <FluentLabel Style="font-size: 25px; font-weight: 600;">
+                    @Musician.Name
+                </FluentLabel>
+            </FluentStack>
+
+            <!-- Info-Zeile -->
+            <FluentStack HorizontalGap="20">
+                <FluentBadge Style="font-weight: 500; font-size:15px">
+                    Gesamt: @Musician.Balance.ToString("C")
+                </FluentBadge>
+                <FluentBadge Style="font-weight: 500; font-size:15px">
+                    Offen: @Musician.outBalance.ToString("C")
+                </FluentBadge>
+            </FluentStack>
+            <FluentButton Appearance="Appearance.Accent" OnClick="CloseView" Style="width:100%">
+                Zurück
+            </FluentButton>
+        </FluentStack>
+    </FluentCard>
+</FluentStack>
+
+@code {
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter]
+    public required Musician Musician
+    {
+        get { return _musician; }
+        set
+        {
+            _musician = value;
+            using (var db = new MusicianDbContext())
+            {
+                _DrinkHistory = db.DrinkEntries.Where(m => m.MusicianId == _musician.Id).ToList().OrderByDescending(m => m.Date).AsQueryable();
+            }
+        }
+    }
+
+    private Musician _musician;
+
+    private IQueryable<DrinkEntryDB> _DrinkHistory { get; set; }
+
+    private void DeleteDrinkEntry(DrinkEntryDB entry)
+    {
+        using (var db = new KassaDbContext())
+        {
+            db.Kassa.FirstOrDefault().ProjectedBalance -= entry.Price;
+            db.SaveChanges();
+        }
+
+        using (var db = new DrinksDbContext())
+        {
+            db.Drink.FirstOrDefault(d => d.Name == entry.Name).StockCount++;
+            db.SaveChanges();
+        }
+
+        using (var db = new MusicianDbContext())
+        {
+            db.DrinkEntries.Remove(entry);
+            _musician.outBalance -= entry.Price;
+            db.Musicians.FirstOrDefault(m => m.Id == _musician.Id).outBalance = _musician.outBalance;
+            db.SaveChanges();
+            _DrinkHistory = db.DrinkEntries.Where(m => m.MusicianId == _musician.Id).ToList().OrderByDescending(m => m.Date).AsQueryable();
+        }
+    }
+
+    private async Task CloseView()
+    {
+        await OnClose.InvokeAsync();
+    }
+}

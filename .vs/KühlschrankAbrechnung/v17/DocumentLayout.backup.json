@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83B81E14-7459-4E1E-A6E3-F032A8A40E24}|ManagementWeb\\ManagementWeb.csproj|d:\\codewin\\k\u00FChlschrankabrechnung\\managementweb\\components\\views\\statistikview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83B81E14-7459-4E1E-A6E3-F032A8A40E24}|ManagementWeb\\ManagementWeb.csproj|solutionrelative:managementweb\\components\\views\\statistikview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B81E14-7459-4E1E-A6E3-F032A8A40E24}|ManagementWeb\\ManagementWeb.csproj|d:\\codewin\\k\u00FChlschrankabrechnung\\managementweb\\components\\viewmodels\\statistikviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B81E14-7459-4E1E-A6E3-F032A8A40E24}|ManagementWeb\\ManagementWeb.csproj|solutionrelative:managementweb\\components\\viewmodels\\statistikviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E62FA758-121E-44DF-A332-15509EDF956F}|K\u00FChlschrankAbrechnung\\K\u00FChlschrankAbrechnung.csproj|d:\\codewin\\k\u00FChlschrankabrechnung\\k\u00FChlschrankabrechnung\\customcontrols\\auswahlpopup.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E62FA758-121E-44DF-A332-15509EDF956F}|K\u00FChlschrankAbrechnung\\K\u00FChlschrankAbrechnung.csproj|solutionrelative:k\u00FChlschrankabrechnung\\customcontrols\\auswahlpopup.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 222,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 234,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuswahlPopup.axaml",
+              "DocumentMoniker": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\K\u00FChlschrankAbrechnung\\CustomControls\\AuswahlPopup.axaml",
+              "RelativeDocumentMoniker": "K\u00FChlschrankAbrechnung\\CustomControls\\AuswahlPopup.axaml",
+              "ToolTip": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\K\u00FChlschrankAbrechnung\\CustomControls\\AuswahlPopup.axaml",
+              "RelativeToolTip": "K\u00FChlschrankAbrechnung\\CustomControls\\AuswahlPopup.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-02T17:43:04.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StatistikView.razor",
+              "DocumentMoniker": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\ManagementWeb\\Components\\Views\\StatistikView.razor",
+              "RelativeDocumentMoniker": "ManagementWeb\\Components\\Views\\StatistikView.razor",
+              "ToolTip": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\ManagementWeb\\Components\\Views\\StatistikView.razor*",
+              "RelativeToolTip": "ManagementWeb\\Components\\Views\\StatistikView.razor*",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwIcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T14:09:22.378Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StatistikViewModel.cs",
+              "DocumentMoniker": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\ManagementWeb\\Components\\ViewModels\\StatistikViewModel.cs",
+              "RelativeDocumentMoniker": "ManagementWeb\\Components\\ViewModels\\StatistikViewModel.cs",
+              "ToolTip": "D:\\CodeWin\\K\u00FChlschrankAbrechnung\\ManagementWeb\\Components\\ViewModels\\StatistikViewModel.cs",
+              "RelativeToolTip": "ManagementWeb\\Components\\ViewModels\\StatistikViewModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwDAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T14:09:15.483Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

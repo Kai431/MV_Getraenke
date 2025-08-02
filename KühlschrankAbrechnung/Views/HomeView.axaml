@@ -1,0 +1,195 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:KühlschrankAbrechnung.ViewModels"
+        xmlns:views="clr-namespace:KühlschrankAbrechnung.Views"
+        mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+        x:Class="KühlschrankAbrechnung.HomeView"
+        x:DataType="vm:HomeViewModel"
+        Background="White"
+        xmlns:controls="clr-namespace:KühlschrankAbrechnung">
+  
+  <Grid>
+    
+    <StackPanel>
+
+    <!-- Header -->
+    <Border Background="#2196F3" Height="60" Padding="20,0" BorderBrush="#1976D2" BorderThickness="0,0,0,2">
+      <DockPanel VerticalAlignment="Center">
+        <TextBlock Text="🍻 Kühlschranknutzung"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   VerticalAlignment="Center"/>
+        <TextBlock Text="{Binding Date}"
+                   FontSize="14"
+                   Foreground="#E0F7FA"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"/>
+      </DockPanel>
+    </Border>
+
+    <!-- Inhalt -->
+    <UniformGrid Columns="3" HorizontalAlignment="Center" Margin="0,5,0,0">
+
+      <!-- Klarinette -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Klarinette"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/klarinette.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Klarinette" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Querflöte -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Querflöte"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/querfloete.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Querflöte" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Saxophon -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Saxophon"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/saxophon.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Saxophon" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Trompete -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Trompete"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/trompete.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Trompete" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Flügelhorn -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Flügelhorn"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/fluegelhorn.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Flügelhorn" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Horn -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Horn"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/horn.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock HorizontalAlignment="Center" Text="Horn" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Tenorhorn -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Tenorhorn"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/tenorhorn.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Tenorhorn" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Posaune -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Posaune"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/posaune.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Posaune" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Tuba -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Tuba"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/tuba.png"
+                 Width="70" Height="70" Stretch="Uniform"/>
+          <TextBlock Text="Tuba" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Schlagzeug -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Schlagzeug"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/schlagzeug.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Schlagzeug" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Dirigent -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Dirigent"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/dirigent.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Dirigent" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Marketenderin -->
+      <Button Background="White" BorderBrush="#2196F3" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Marketenderin"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/marketenderin.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Marketenderin" FontSize="18" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+
+      <!-- Kantinör -->
+      <!--
+      <Button Background="White" BorderBrush="#FF5722" BorderThickness="2" CornerRadius="12"
+              Command="{Binding GoToSatzViewCommand}" CommandParameter="Kantinör"
+              Width="150" Height="150" Margin="5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+          <Image Source="avares://KühlschrankAbrechnung/Assets/Icons/kantinoer.png"
+                 Width="64" Height="64" Stretch="Uniform"/>
+          <TextBlock Text="Kantinör" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+      </Button>
+    -->
+      
+    </UniformGrid>
+    </StackPanel>
+	  <controls:AuswahlPopup MusikerName="{Binding MusicianName}"
+                           Getränk="{Binding DrinkName}"
+                           IsVisible="{Binding ShowDrinkPopup}"
+                           ExecuteCommand="{Binding CancelDrinkCommand}"
+                           Bild="{Binding ImageName}"
+                           ShowTime="1500"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Stretch"
+                           ZIndex="200"
+                           x:Name="Popup"/>
+  </Grid>
+
+</UserControl>

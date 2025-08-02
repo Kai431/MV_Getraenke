@@ -1,0 +1,16 @@
+2025-06-26 22:05:46.071 +02:00 [INF] Webserver gestartet
+2025-06-26 22:07:15.499 +02:00 [INF] Webserver gestartet
+2025-06-26 22:21:53.877 +02:00 [FTL] AppDomain.CurrentDomain.UnhandledException
+System.InvalidOperationException: Test-Fehler
+   at KühlschrankAbrechnung.ViewModels.SatzViewModel..ctor(MainViewModel main) in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\ViewModels\SatzViewModel.cs:line 27
+   at KühlschrankAbrechnung.ViewModels.MainViewModel..ctor() in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\ViewModels\MainViewModel.cs:line 57
+   at KühlschrankAbrechnung.MainView.!XamlIlPopulate(IServiceProvider, MainView) in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\Views/MainView.axaml:line 10
+   at KühlschrankAbrechnung.MainView.!XamlIlPopulateTrampoline(MainView)
+   at KühlschrankAbrechnung.MainView.InitializeComponent(Boolean loadXaml, Boolean attachDevTools) in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\obj\Debug\net8.0\Avalonia.Generators\Avalonia.Generators.NameGenerator.AvaloniaNameSourceGenerator\KühlschrankAbrechnung.MainView.g.cs:line 25
+   at KühlschrankAbrechnung.MainView..ctor() in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\Views\MainView.axaml.cs:line 18
+   at KühlschrankAbrechnung.App.OnFrameworkInitializationCompleted() in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\App.axaml.cs:line 54
+   at Avalonia.AppBuilder.SetupUnsafe()
+   at Avalonia.AppBuilder.Setup()
+   at Avalonia.AppBuilder.SetupWithLifetime(IApplicationLifetime lifetime)
+   at Avalonia.ClassicDesktopStyleApplicationLifetimeExtensions.StartWithClassicDesktopLifetime(AppBuilder builder, String[] args, Action`1 lifetimeBuilder)
+   at KühlschrankAbrechnung.Program.Main(String[] args) in D:\CodeWin\KühlschrankAbrechnung\KühlschrankAbrechnung\Program.cs:line 14
