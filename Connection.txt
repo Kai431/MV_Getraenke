@@ -1,0 +1,7 @@
+SSH:
+kantinoer
+admin
+
+WLAN:
+MV_Getraenke
+Kantinoer2025
