@@ -5,3 +5,4 @@ admin
 WLAN:
 MV_Getraenke
 Kantinoer2025
+http://192.168.50.1:5000/
